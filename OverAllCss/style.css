@@ -1,0 +1,293 @@
+/* 透明纸背景 */
+
+body {
+    background-image: url("../bg/paperbg.png");
+    background-repeat: repeat;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+
+
+/* 每日壁纸背景 */
+
+.DailyWallpaper {
+    width: 100%;
+    height: 100%;
+    background: url(https://api.sunweihu.com/api/bing1/api.php) no-repeat center center fixed;
+    -moz-background-size: cover;
+    /*背景图片拉伸以铺满全屏*/
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.SuChenWallpaper {
+    width: 100%;
+    height: 100%;
+    background: url(../bg/suchen_ymm_1.jpg) no-repeat center center fixed;
+    -moz-background-size: cover;
+    /*背景图片拉伸以铺满全屏*/
+    -ms-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.bar-panel {
+    background-image: url("../Frameimage/top_bar.png");
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    position: relative;
+    margin: 12px 0px;
+    padding: 3px 8px;
+    color: #fff;
+    display: block;
+    height: 30px;
+}
+
+.progress-bar-card {
+    height: 160px;
+    width: 400px;
+    background-color: rgba(11, 145, 120, 0.39);
+    border-color: #fbaa29;
+    outline: none;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.progress-bar-cardin {
+    margin: 0 auto;
+    padding: inherit;
+    width: 1440px;
+    background-size: 80px 80px;
+    min-height: 160px;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent, 50%, rgba(255, 255, 255, 0.15)50%, rgba(255, 255, 255, 0.15)75%, transparent 75%, transparent);
+    background-repeat: repeat;
+    position: relative;
+}
+
+@keyframes progress-bar {
+    0% {
+        left: 0px;
+    }
+    100% {
+        left: -400px;
+    }
+}
+
+.progress-bar-style1 {
+    animation: progress-bar 8s linear infinite;
+}
+
+
+/* 历史遗留：变白选择按钮*适用于毛玻璃界面 */
+
+.glassfather {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer;
+}
+
+.glassfather:hover {
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(0px);
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer;
+}
+
+
+/* 历史遗留：变白选择，鼠标指针无改动版本 */
+
+.glassfather-nocurse {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.glassfather-nocurse:hover {
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(0px);
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+
+/* 毛玻璃效果合集 */
+
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+.glass1 {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.glass2 {
+    background: rgba(255, 255, 255, 0.20);
+    backdrop-filter: blur(15px);
+}
+
+.glass3 {
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(20px);
+}
+
+.glass4 {
+    background: rgba(255, 255, 255, 0.45);
+    backdrop-filter: blur(25px);
+}
+
+.blackglass {
+    background: rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+}
+
+.blackglass1 {
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.blackglass2 {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+}
+
+.blackglass3 {
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(20px);
+}
+
+.blackglass4 {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(25px);
+}
+.blackglass5 {
+    background: rgba(0, 0, 0, 0.76);
+    backdrop-filter: blur(400px);
+}
+
+.greyglass1 {
+    background: rgba(84, 110, 122, 0.15);
+    backdrop-filter: blur(10px);
+}
+
+.greyglass2 {
+    background: rgba(84, 110, 122, 0.25);
+    backdrop-filter: blur(10px);
+}
+
+.greyglass3 {
+    background: rgba(84, 110, 122, 0.35);
+    backdrop-filter: blur(10px);
+}
+
+.greyglass4 {
+    background: rgba(84, 110, 122, 0.45);
+    backdrop-filter: blur(10px);
+}
+
+
+/* 毛玻璃效果合集结束 */
+
+
+/* Windows10 fluentdesign 效果合集 */
+
+
+/* Windows10-返回图标 */
+
+.windows10-westicon {
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.windows10-westicon:hover {
+    background-color: #1985DA;
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+
+/* Windows10-UWP按键 */
+
+.windows10-fluent-button {
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(0px);
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer;
+}
+
+.windows10-fluent-button:hover {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(0px);
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer;
+}
+
+
+/* Windows10-文字框 */
+
+.windows10-fluent-textblock {
+    border: grey solid 4px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.buttomborder-white{
+    border-bottom: gray solid 1px;
+}
+.card{
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.card:hover{
+    margin:  0px 0px 25px 0px;
+    padding: 0px;
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    
+}
