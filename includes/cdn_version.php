@@ -1,1 +1,0 @@
-<?php $cdn_commit_version = 'a3f91e2'; ?>
