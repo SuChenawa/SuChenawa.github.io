@@ -1,217 +1,151 @@
 <!doctype html>
-<html>
+<html lang="zh-cmn-Hans">
 
 <head>
     <meta charset="utf-8">
-    <!--Import Google Icon Font-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
     <link href="./fonts/fonts.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="./OverAllCss/style1.css" />
-    <link type="text/css" rel="stylesheet" href="./OverAllCss/style.css" />
-    <title>夙宸-中转站点</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- MDUI CSS -->
+
+    <link rel="stylesheet" href="./OverAllCss/mdui.css" />
+    <link rel="stylesheet" href="./OverAllCss/style.css" />
+    <title>夙宸-主页</title>
 </head>
 
-<body class="SuChenWallpaper">
+<body class="mdui-drawer-body-left ">
+    <div class="mdui-appbar mdui-appbar-fixed" style="z-index: 9999;background-color: gray;">
+        <!-- 使用 mdui-appbar-inset class 以切换应用栏属性 -->
+        <div class="mdui-toolbar mdui-color-theme">
+            <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer'}" mdui-drawer-close
+                style="padding: 0px;width: 40px;"><i class="mdui-icon material-icons">menu</i></button>
+            <a href="javascript:;" class="mdui-typo-headline">夙宸</a>
+            <div class="mdui-toolbar-spacer"></div>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
+            <a href="javascript:window.location.reload();" class="mdui-btn mdui-btn-icon"><i
+                    class="mdui-icon material-icons">refresh</i></a>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#aboutmore'}"><i
+                    class="mdui-icon material-icons">more_vert</i></a>
 
-    <script type="text/javascript " src="https://code.jquery.com/jquery-2.1.1.min.js "></script>
-    <script type="text/javascript " src="js/materialize.min.js "></script>
-    <div class="navbar-fixed ">
-        <nav class="nav-extended greyglass3 ">
-            <div class="nav-wrapper " style="margin-left: 20px ">
-                <a href="# " class="brand-logo center " style="color: white; ">夙宸-中转站</a>
-                <a href="# " data-activates="mobile-demo " class="button-collapse "><i
-                        class="material-icons ">menu</i></a>
-            </div>
-            <div class="nav-content ">
-
-            </div>
-        </nav>
+                    <ul class="mdui-menu" id="aboutmore">
+                        <li class="mdui-menu-item">
+                            <a href="index.html" class="mdui-ripple">
+                                <i class="mdui-menu-item-icon mdui-icon material-icons">arrow_back</i>首页
+                            </a>
+                        </li>
+                        <li class="mdui-menu-item">
+                          <a href="javascript:;" class="mdui-ripple">
+                            <i class="mdui-menu-item-icon mdui-icon material-icons">file_download</i>Download
+                          </a>
+                        </li>
+                        <li class="mdui-divider"></li>
+                        <li class="mdui-menu-item">
+                            <a href="PrivacyPolicy.html" class="mdui-ripple">
+                                <i class="mdui-menu-item-icon mdui-icon material-icons">cloud_download</i>隐私政策
+                            </a>
+                        </li>
+                      </ul>
+        </div>
     </div>
 
-    <br>
-    <div style="margin: 20px; ">
-        <div class="row ">
 
-            <div class="col s6 m6 l4 ">
-                <a>
-                    <div class="card darken-1 hoverable greyglass1 " style="border-radius: 8px; padding: 0px;">
-                        <div class="card-content light-blue-text glass " style="padding: 0px; border-radius:8px">
-                            <div class="card-title greyglass3 buttomborder-white "
-                                style="height: 70px; padding: 10px 10px;border-radius: 8px 8px 0px 0px;">
-                                <div class="row">
-                                    <div class="col s3 m3 l3 ">
-                                        <img src="./bg/header_logo.jpg" width="50px" style="border-radius: 50px;">
-                                    </div>
-                                    <div class="col s6 m6 l6 card-title center" style="padding: 10px 15px;">
-                                        <span style="color: white;">夙宸</span>
-                                    </div>
+    <div class="mdui-drawer mdui-drawer-full-height" id="left-drawer" style="background-color: grey;">
+
+        <div>
+            <button class="mdui-btn" style="width: 100%;background-color: #607D8B ; height: 65px;" mdui-drawer-close><i
+                    class="mdui-icon material-icons">close</i></button>
+            <div style="padding: 20px 20px 0px 20px;">
+
+                <div style="width: 100%; text-align: center;">
+                    <div class="mdui-ripple"
+                        style="border-radius: 50px; width: 80px;text-align: center;margin: 0 auto;">
+                        <img src="./BackgroundImage/header_logo.jpg" width="80px" style="border-radius: 50px;"
+                            draggable="false">
+                    </div>
+                    <h2 style="color: white;text-align: center;">夙宸</h2>
+                </div>
+
+            </div>
 
 
+
+            <ul class="mdui-list ">
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content">主页</div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content">博客</div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content">教程页</div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
+                </li>
+                <li class="mdui-list-item mdui-ripple">
+                    <div class="mdui-list-item-content">关于</div>
+                    <i class="mdui-list-item-icon mdui-icon material-icons">error</i>
+                </li>
+            </ul>
+
+            <div class="mdui-panel" mdui-panel>
+
+                <div class="mdui-panel-item">
+                    <div class="mdui-panel-item-header">菜单</div>
+                    <div class="mdui-panel-item-body">
+                        <p>01</p>
+                        <p>02</p>
+                        <div class="mdui-panel" mdui-panel>
+                            <div class="mdui-panel-item">
+                                <div class="mdui-panel-item-header">小菜单</div>
+                                <div class="mdui-panel-item-body">
+                                    <p>First content</p>
+                                    <p>First content</p>
+                                    <p>First content</p>
                                 </div>
                             </div>
-                            <div class="center" style=" padding: 0px 25px 15px 25px;">
-                                <p style="color: powderblue;">这里是中转站</p>
-                                <p style="color: powderblue;">有什么需要帮助的吗？</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col s6 m6 l8 ">
-                <a>
-                    <div class="card darken-1 hoverable greyglass1 " style="border-radius: 8px; padding: 0px;">
-                        <div class="card-content light-blue-text glass " style="padding: 0px; ">
-                            <div class="card-title greyglass3 buttomborder-white center"
-                                style=" padding: 20px 25px;border-radius: 8px 8px 0px 0px;">
-                                <span style="color: white;">欢迎</span>
-                            </div>
-                            <div class="center" style=" padding: 0px 25px 15px 25px;">
-                                <p style="color: powderblue;">利用本站</p>
-                                <p style="color: powderblue;">可以跳转到其他站点</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-
-        </div>
-
-        <div class="row ">
-
-            <div class="col s12 m6 l4 ">
-                <a href="./Tutorials/index.html">
-                    <div class="card darken-1 hoverable greyglass1 " style="border-radius: 8px; padding: 0px;">
-                        <div class="card-content light-blue-text glass " style="padding: 0px; ">
-                            <div class="card-title greyglass3 buttomborder-white center"
-                                style=" padding: 20px 25px;border-radius: 8px 8px 0px 0px;">
-                                <span style="color: white;">教程页</span>
-                            </div>
-                            <div class="center" style=" padding: 0px 25px 15px 25px;">
-                                <p style="color: powderblue;">各种各样的教程</p>
-                                <p style="color: powderblue;">都存放在这个页面</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="col s12 m6 l4 ">
-                <a href="https://suchen.lfmemz.ltd/ ">
-                    <div class="card darken-1 hoverable greyglass1 " style="border-radius: 8px; padding: 0px;">
-                        <div class="card-content light-blue-text glass " style="padding: 0px; ">
-                            <div class="card-title greyglass3 buttomborder-white center"
-                                style=" padding: 20px 25px;border-radius: 8px 8px 0px 0px;">
-                                <span style="color: white;">服务器后台状态页</span>
-                            </div>
-                            <div class="center" style=" padding: 0px 25px 15px 25px;">
-                                <p style="color: powderblue;">NO DATA</p>
-                                <p style="color: powderblue;">NO DATA</p>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-
-
-        </div>
-
-        <div style="margin: 10px;">
-            <div class="darken-1 hoverable" style="border-radius: 10px;">
-                <div class="card-title greyglass4 center" style="padding: 10px;border-radius: 10px 10px 0px 0px;">
-                    <span>
-                        <h4 class="white-text" style="margin-left: 10px; ">关于</h4>
-                    </span>
-                </div>
-                <div>
-                    <div class="greyglass2" style="border-radius: 0px 0px 10px 10px;">
-
-                        <div class="glassfather-nocurse" style="height: 60px;color: powderblue;">
-                            <span style="margin-left: 30px;line-height: 60px;">网站版本:NULL(测试版本)</span>
-                            <button class="btn waves-effect waves-light right" style="margin: 10px;"><a
-                                    class="white-text"
-                                    href="http://www.lfmemz.ltd/update-history.html">更新历史</a></button>
-                        </div>
-                        <div class="white-text glassfather" style="height: 40px;">
-                            <div style="margin-left: 30px;line-height: 40px;">了解我们<i class="material-icons right"
-                                    style="line-height: 40px;margin-right: 20px;">launch</i></div>
-                        </div>
-                        <div class="white-text glassfather" style="height: 40px;">
-                            <div style="margin-left: 30px;line-height: 40px;">获取帮助<i class="material-icons right"
-                                    style="line-height: 40px;margin-right: 20px;">launch</i></div>
-                        </div>
-                        <div class="white-text glassfather" style="height: 40px;">
-                            <div style="margin-left: 30px;line-height: 40px;">报告问题<i class="material-icons right"
-                                    style="line-height: 40px;margin-right: 20px;">launch</i></div>
-                        </div>
-                        <div class="white-text glassfather" style="height: 40px;border-radius: 0px 0px 10px 10px;">
-                            <div style="margin-left: 30px;line-height: 40px;">更多详情<i class="material-icons right"
-                                    style="line-height: 40px;margin-right: 20px;">play_arrow</i></div>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
+
+
+
+
 
     </div>
 
 
+    <div class="SuChenWallpaper" style="height: 1440px; width: 100%;;">
 
-
-
-
-
-
-
-    <div class="fixed-action-btn horizontal ">
-        <a class="btn-floating btn-large red ">
-            <i class="large material-icons ">mode_edit</i>
-        </a>
-        <ul>
-            <li><a class="btn-floating red "><i class="material-icons ">insert_chart</i></a></li>
-            <li><a class="btn-floating yellow darken-1 "><i class="material-icons ">format_quote</i></a></li>
-            <li><a class="btn-floating green "><i class="material-icons ">publish</i></a></li>
-            <li><a class="btn-floating blue "><i class="material-icons ">attach_file</i></a></li>
-        </ul>
     </div>
 
 
+    <div class="mdui-fab-wrapper" id="exampleFab">
+        <button class="mdui-fab mdui-ripple mdui-color-theme-accent">
+            <!-- 默认显示的图标 -->
+            <i class="mdui-icon material-icons">add</i>
 
-
-    <!-- 
-    <footer class="page-footer #FF7628 "> -->
-    <footer class="page-footer greyglass4 ">
-        <div class="container ">
-            <div class="row ">
-                <div class="col l6 s12 ">
-                    <h5 class="white-text ">内容支持：夙宸</h5>
-                    <p class="grey-text text-lighten-4 ">关于我</p>
-                </div>
-                <div class="col l4 offset-l2 s12 ">
-                    <h5 class="white-text ">相关链接</h5>
-                    <ul>
-                        <li><a class="red-text text-lighten-3 ">这里没有任何数据</a></li>
-                        <!--
-                  <li><a class="grey-text text-lighten-3 " href="https://www.lfmemz.ltd ">夙宸的主站</a></li>
-				  <li><a class="grey-text text-lighten-3 " href="https://www.lfmemz.ltd/furry/ ">夙宸的furry小站</a></li>
-				  <li><a class="grey-text text-lighten-3 " href="https://www.lfmemz.ltd/rtgj/ ">RTGJ站点</a></li>
--->
-                    </ul>
-                </div>
-            </div>
+            <!-- 在拨号菜单开始打开时，平滑切换到该图标，若不需要切换图标，则可以省略该元素 -->
+            <i class="mdui-icon mdui-fab-opened material-icons">add</i>
+        </button>
+        <div class="mdui-fab-dial">
+            <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink"><i
+                    class="mdui-icon material-icons">backup</i></button>
+            <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red"><i
+                    class="mdui-icon material-icons">bookmark</i></button>
+            <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-orange"><i
+                    class="mdui-icon material-icons">access_alarms</i></button>
+            <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue"><i
+                    class="mdui-icon material-icons">touch_app</i></button>
         </div>
-        <div class="footer-copyright ">
-            <div class="container ">
-                Copyright © 2021 夙宸 · All Rights Reserved
-                <a class="grey-text text-lighten-4 right " href="https://www.lfmemz.ltd ">QQ群:NULL</a>
-            </div>
-        </div>
-    </footer>
-
+    </div>
+    <script src="./js/mdui.js"></script>
+    <script src="./js/init.js"></script>
 </body>
 
 </html>

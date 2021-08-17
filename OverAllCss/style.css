@@ -1,13 +1,13 @@
 /* 透明纸背景 */
 
-body {
+/* body {
     background-image: url("../bg/paperbg.png");
     background-repeat: repeat;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    background-attachment: fixed;
-}
+    background-attachment: fixed; 
+    } */
 
 
 /* 每日壁纸背景 */
@@ -27,7 +27,7 @@ body {
 .SuChenWallpaper {
     width: 100%;
     height: 100%;
-    background: url(../bg/suchen_ymm_1.jpg) no-repeat center center fixed;
+    background: url(../BackgroundImage/suchen_ymm_1.jpg) no-repeat center center fixed;
     -moz-background-size: cover;
     /*背景图片拉伸以铺满全屏*/
     -ms-background-size: cover;
@@ -187,22 +187,22 @@ body {
     backdrop-filter: blur(400px);
 }
 
-.greyglass1 {
+.grayglass1 {
     background: rgba(84, 110, 122, 0.15);
     backdrop-filter: blur(10px);
 }
 
-.greyglass2 {
+.grayglass2 {
     background: rgba(84, 110, 122, 0.25);
     backdrop-filter: blur(10px);
 }
 
-.greyglass3 {
+.grayglass3 {
     background: rgba(84, 110, 122, 0.35);
     backdrop-filter: blur(10px);
 }
 
-.greyglass4 {
+.grayglass4 {
     background: rgba(84, 110, 122, 0.45);
     backdrop-filter: blur(10px);
 }
@@ -274,20 +274,5 @@ body {
 .buttomborder-white{
     border-bottom: gray solid 1px;
 }
-.card{
-    transition: .25s;
-    transition-property: all;
-    transition-duration: 0.25s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
-.card:hover{
-    margin:  0px 0px 25px 0px;
-    padding: 0px;
-    transition: .25s;
-    transition-property: all;
-    transition-duration: 0.25s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    
-}
+
+
