@@ -17,49 +17,53 @@
 </head>
 
 <body class="mdui-drawer-body-left ">
-    <div class="mdui-appbar mdui-appbar-fixed" style="z-index: 9999;background-color: gray;">
+    <!-- 顶部应用栏 -->
+    <div class="mdui-appbar mdui-appbar-fixed glass4" style="z-index: 9999;">
         <!-- 使用 mdui-appbar-inset class 以切换应用栏属性 -->
         <div class="mdui-toolbar mdui-color-theme">
+            <!-- 顶部应用栏左方菜单 -->
             <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer'}" mdui-drawer-close
                 style="padding: 0px;width: 40px;"><i class="mdui-icon material-icons">menu</i></button>
+            <!-- 顶部应用栏左方页面名称 -->
             <a href="javascript:;" class="mdui-typo-headline">夙宸</a>
+            <!-- 占位符 -->
             <div class="mdui-toolbar-spacer"></div>
             <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
             <a href="javascript:window.location.reload();" class="mdui-btn mdui-btn-icon"><i
                     class="mdui-icon material-icons">refresh</i></a>
+            <!-- 顶部应用栏右方更多按钮 -->
             <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#aboutmore'}"><i
                     class="mdui-icon material-icons">more_vert</i></a>
-
+            <!-- 顶部应用栏右方更多按钮 菜单栏目 -->
             <ul class="mdui-menu" id="aboutmore">
                 <li class="mdui-menu-item">
                     <a href="index.html" class="mdui-ripple">
-                        <i class="mdui-menu-item-icon mdui-icon material-icons">arrow-back</i>回到主页
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">arrow_back</i>转到首页
                     </a>
                 </li>
                 <li class="mdui-menu-item">
                     <a href="javascript:;" class="mdui-ripple">
-                        <i class="mdui-menu-item-icon mdui-icon material-icons">file_download</i>Download
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">file_download</i>
                     </a>
                 </li>
                 <li class="mdui-divider"></li>
                 <li class="mdui-menu-item">
-                    <a href="javascript:;" class="mdui-ripple">
-                        <i class="mdui-menu-item-icon mdui-icon material-icons">delete</i>Remove
+                    <a href="PrivacyPolicy.html" class="mdui-ripple">
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">cloud_download</i>隐私政策
                     </a>
                 </li>
             </ul>
         </div>
     </div>
+    <!-- 引入抽屉式导航栏 -->
+    <div class="mdui-drawer mdui-drawer-full-height" style="height: 100%;background-color: white;" id="left-drawer">
+        <div style="padding-top: 58px;">
+            <!-- <button class="mdui-btn" style="width: 100%;background-color: #607D8B ; height: 65px;" mdui-drawer-close><i
+                        class="mdui-icon material-icons">close</i></button> -->
+            <div
+                style="padding: 20px 20px 1px 20px;background:url(./BackgroundImage/ymm.png); -moz-background-size: cover;-ms-background-size: cover;-webkit-background-size: cover;background-size: cover;-o-background-size: cover;">
 
-
-    <div class="mdui-drawer mdui-drawer-full-height" id="left-drawer" style="background-color: grey;">
-
-        <div>
-            <button class="mdui-btn" style="width: 100%;background-color: #607D8B ; height: 65px;" mdui-drawer-close><i
-                    class="mdui-icon material-icons">close</i></button>
-            <div style="padding: 20px 20px 0px 20px;">
-
-                <div style="width: 100%; text-align: center;">
+                <div style="width: 100%; text-align: center; ">
                     <div class="mdui-ripple"
                         style="border-radius: 50px; width: 80px;text-align: center;margin: 0 auto;">
                         <img src="./BackgroundImage/header_logo.jpg" width="80px" style="border-radius: 50px;"
@@ -71,92 +75,127 @@
             </div>
 
 
-
-            <ul class="mdui-list ">
-                <li class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-content">主页</div>
-                    <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-content">博客</div>
-                    <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-content">教程页</div>
-                    <i class="mdui-list-item-icon mdui-icon material-icons">send</i>
-                </li>
-                <li class="mdui-list-item mdui-ripple">
-                    <div class="mdui-list-item-content">关于</div>
-                    <i class="mdui-list-item-icon mdui-icon material-icons">error</i>
-                </li>
-            </ul>
-
-            <div class="mdui-panel" mdui-panel>
-
-                <div class="mdui-panel-item">
-                    <div class="mdui-panel-item-header">菜单</div>
-                    <div class="mdui-panel-item-body">
-                        <p>01</p>
-                        <p>02</p>
-                        <div class="mdui-panel" mdui-panel>
-                            <div class="mdui-panel-item">
-                                <div class="mdui-panel-item-header">小菜单</div>
-                                <div class="mdui-panel-item-body">
-                                    <p>First content</p>
-                                    <p>First content</p>
-                                    <p>First content</p>
-                                </div>
-                            </div>
-                        </div>
+            <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+                <!-- 抽屉式导航栏内第一个菜单 -->
+                <div class="mdui-collapse-item" id="01">
+                    <!-- 抽屉式导航栏内第一个模块菜单标题栏 -->
+                    <div class="mdui-collapse-item-header  mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">home</i>
+                        <div class="mdui-list-item-content">主页</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <!-- 抽屉式导航栏内第一个模块子菜单 -->
+                    <div class="mdui-collapse-item-body mdui-list ">
+                        <a href="index.html" class="mdui-list-item mdui-ripple">主页</a>
+                        <a href="index.html#WebsiteRunningTime" class="mdui-list-item mdui-ripple ">网站运行时间</a>
                     </div>
                 </div>
+                <!-- 分割线 -->
+                <!-- <li class="mdui-divider mdui-m-y-0"></li> -->
+
+                <!-- 抽屉式导航栏内第二个菜单 -->
+                <div class="mdui-collapse-item mdui-collapse-item-open">
+                    <!-- 抽屉式导航栏内第二个模块菜单标题栏 -->
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red">developer_mode</i>
+                        <div class="mdui-list-item-content">博客</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <!-- 抽屉式导航栏内第二个模块子菜单 -->
+                    <div class="mdui-collapse-item-body mdui-list">
+                        <a href="https://www.lfmemz.ltd/" class="mdui-list-item mdui-ripple ">播客主页</a>
+                        <a href="https://www.lfmemz.ltd/index.php/%e5%85%b3%e4%ba%8e%e5%a4%99%e5%ae%b8/"
+                            class="mdui-list-item mdui-ripple ">关于夙宸</a>
+                        <a href="https://www.lfmemz.ltd/index.php/%e9%9a%90%e7%a7%81%e6%94%bf%e7%ad%96/"
+                            class="mdui-list-item mdui-ripple mdui-list-item-active">博客隐私政策</a>
+                    </div>
+                </div>
+                <!-- 分割线 -->
+                <!-- <li class="mdui-divider mdui-m-y-0"></li> -->
+
+                <!-- 抽屉式导航栏内第三个菜单 -->
+                <div class="mdui-collapse-item">
+                    <!-- 抽屉式导航栏内第三个模块菜单标题栏 -->
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">book</i>
+                        <div class="mdui-list-item-content">教程页面</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <!-- 抽屉式导航栏内第三个模块子菜单 -->
+                    <div class="mdui-collapse-item-body mdui-list">
+                        <a href="" class="mdui-list-item mdui-ripple ">教程页首页</a>
+                        <a href="" class="mdui-list-item mdui-ripple ">GFW区域</a>
+                    </div>
+                </div>
+                <!-- 分割线 -->
+                <!-- <li class="mdui-divider mdui-m-y-0"></li> -->
+
+                <!-- 抽屉式导航栏内第四个菜单 -->
+                <div class="mdui-collapse-item ">
+                    <!-- 抽屉式导航栏内第四个模块菜单标题栏 -->
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-yellow">more_horiz</i>
+                        <div class="mdui-list-item-content">更多</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <!-- 抽屉式导航栏内第四个模块子菜单 -->
+                    <div class="mdui-collapse-item-body mdui-list">
+                        <a href="" class="mdui-list-item mdui-ripple ">NoData</a>
+                        <a href="" class="mdui-list-item mdui-ripple ">NoData</a>
+                    </div>
+                </div>
+                <!-- 分割线 -->
+                <li class="mdui-divider mdui-m-y-0"></li>
+                <div class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">error</i>
+                    <div class="mdui-list-item-content">关于</div>
+                </div>
+
             </div>
         </div>
-
-
-
-
-
     </div>
 
-    <div class="SuChenWallpaper" style=" width: 100%;">
+    <!-- 引入抽屉式导航栏 -->
+    <!-- <div class="mdui-drawer mdui-drawer-full-height" style="height: 100%;background-color: #CACACA;" id="left-drawer">
+        <object style="border: 0px;width: 100%;height: 99%;" type="text/x-scriptlet" data="NavigationBar.html"></object>
+    </div> -->
+    <!-- 暂时没用的一段代码 -->
+    <!-- <script type="text/javascript">
+        window.onload = function () {
+
+            document.getElementsByTagName('01')[0].className += 'mdui-collapse-item-open';
+
+        }
+    </script> -->
+
+
+
+
+
+    <div class="SuChenWallpaper" style="width: 100%; height: 100%; position: fixed;z-index: -1;"></div>
+    <div style=" width: 100%;">
         <div style="height: 50px;"></div>
         <div style="padding: 30px;">
             <div class="glass4" style="border-radius: 8px;padding: 30px;">
                 <h2>我们是谁</h2>
-                <p>我们的站点地址是：https://www.lfmemz.ltd。</p>
-                <h2>评论</h2>
-                <p>当访客留下评论时，我们会收集评论表单所显示的数据，和访客的IP地址及浏览器的user agent字符串来帮助检查垃圾评论。</p>
-                <p>由您的电子邮箱地址所生成的匿名化字符串（又称为哈希）可能会被提供给Gravatar服务确认您是否有使用该服务。Gravatar服务的隐私政策在此：https://automattic.com/privacy/。在您的评论获批准后，您的资料图片将在您的评论旁公开展示。
-                </p>
+                <p>我们的站点地址是：https://suchenawa.github.io | https://www.suchenawa.com 。</p>
                 <h2>媒体</h2>
                 <p>如果您向此网站上传图片，您应当避免上传那些有嵌入地理位置信息（EXIF GPS）的图片。此网站的访客将可以下载并提取此网站的图片中的位置信息。</p>
                 <h2>Cookies</h2>
-                <p>如果您在我们的站点上留下评论，您可以选择用cookies保存您的名字、电子邮箱地址和网站地址。这是通过让您可以不用在评论时再次填写相关内容而向您提供方便。这些cookies会保留一年。</p>
-                <p>如果您访问我们的登录页，我们会设置一个临时的cookie来确认您的浏览器是否接受cookies。此cookie不包含个人数据，且会在您关闭浏览器时被丢弃。</p>
-                <p>当您登录时，我们也会设置多个cookies来保存您的登录信息及屏幕显示选项。登录cookies会保留两天，而屏幕显示选项cookies会保留一年。如果您选择了“记住我”，您的登录状态则会保留两周。如果您注销登陆了您的账户，用于登录的cookies将会被移除。
-                </p>
-                <p>如果您编辑或发布文章，我们会在您的浏览器中保存一个额外的cookie。这个cookie不包含个人数据而只记录了您刚才编辑的文章的ID。这个cookie会保留一天。</p>
+                <p>本网站是静态网站，不保存任何Cookies信息。</p>
                 <h2>来自其他网站的嵌入内容</h2>
                 <p>此站点上的文章可能会包含嵌入的内容（如视频、图片、文章等）。来自其他站点的嵌入内容的行为和您直接访问这些其他站点没有区别。</p>
                 <p>这些站点可能会收集关于您的数据、使用cookies、嵌入额外的第三方跟踪程序及监视您与这些嵌入内容的交互，包括在您有这些站点的账户并登录了这些站点时，跟踪您与嵌入内容的交互。</p>
-                <h2>我们与谁共享您的信息</h2>
-                <p>若您请求重置密码，您的IP地址将包含于密码重置邮件中。</p>
                 <h2>我们保留多久您的信息</h2>
                 <p>如果您留下评论，评论和其元数据将被无限期保存。我们这样做以便能识别并自动批准任何后续评论，而不用将这些后续评论加入待审队列。</p>
                 <p>对于本网站的注册用户，我们也会保存用户在个人资料中提供的个人信息。所有用户可以在任何时候查看、编辑或删除他们的个人信息（除了不能变更用户名外）、站点管理员也可以查看及编辑那些信息。</p>
-                <h2>您对您的信息有什么权利</h2>
-                <p>如果您有此站点的账户，或曾经留下评论，您可以请求我们提供我们所拥有的您的个人数据的导出文件，这也包括了所有您提供给我们的数据。您也可以要求我们抹除所有关于您的个人数据。这不包括我们因管理、法规或安全需要而必须保留的数据。
-                </p>
-                <h2>我们将您的信息发送到哪</h2>
-                <p>访客评论可能会被自动垃圾评论监测服务检查。</p>
             </div>
-           
+
         </div>
     </div>
 
 
-  
+    <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/mdui.js"></script>
     <script src="./js/init.js"></script>
 </body>
