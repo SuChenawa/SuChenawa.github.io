@@ -279,3 +279,88 @@
 
 
 
+/*  */
+
+.mdui-btn-raised{
+    border-radius: 5px;
+    }
+    .mdui-dialog{
+    border-radius: 10px;
+    }
+    .mdui-menu{
+    border-radius: 10px;
+    }
+    .mdui-tooltip{
+    border-radius: 20px;
+    background-color: #EEEEEE;
+    color:black;
+    }
+    /* @keyframes card{
+    from {top: 64px;opacity: 0;}
+    to {top: 0px;opacity: 1;}
+    } */
+    @keyframes card{
+        0%{
+            top: 64px;opacity: 0;
+        }
+        100%{
+            top: 0px;opacity: 1;
+        }
+    }
+    .mdui-card{
+    border-radius: 10px;
+    animation-name: card;
+    animation-duration: 1s;
+    }
+    .mdui-drawer-list-item-active{
+    border-radius: 0 20px 20px 0;
+    background-color:#B9D1FF ;
+    color:#448AFF;
+    }
+    .mdui-drawer-list-item{
+    border-radius: 0 20px 20px 0;
+    }
+    footer{
+    border-radius: 10px 10px 0 0;
+    }
+    @keyframes toleft{
+    from {margin-left: 64px;opacity: 0;}
+    to {}
+    }
+    @keyframes toright{
+    from {margin-right: 64px;opacity: 0;}
+    to {}
+    }
+    .toleft{
+    animation-name: toleft;
+    animation-duration: 0.5s;
+    }
+    .toright{
+    animation-name: toright;
+    animation-duration: 0.5s;
+    }
+    .mdui-btn,.opacity{
+    animation-name: opacity;
+    animation-duration: 1s;
+    }
+    @keyframes opacity{
+    from  {opacity: 0;}
+    to {opacity: 1;}
+    }
+    .title{
+    animation-name: title;
+    animation-duration: 1s;
+    }
+    @keyframes title{
+    from {font-size: 15px;}
+    to {}
+    }
+    .img{
+    animation-name: img;
+    animation-duration: 1s;
+    }
+    @keyframes img{
+    from {margin-top: 32px;margin-bottom: 32px;}
+    to {}
+    }
+    
