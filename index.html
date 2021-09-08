@@ -178,7 +178,8 @@
 
                         <!-- 卡片头部，包含头像、标题、副标题 -->
                         <div class="mdui-card-header">
-                            <img class="mdui-card-header-avatar" src="https://suchenawa.github.io/BackgroundImage/header_logo.jpg" />
+                            <img class="mdui-card-header-avatar"
+                                src="https://suchenawa.github.io/BackgroundImage/header_logo.jpg" />
                             <div class="mdui-card-header-title">夙宸</div>
                             <div class="mdui-card-header-subtitle">撰写自2020/09/08</div>
                         </div>
@@ -186,6 +187,13 @@
                         <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
                         <div class="mdui-card-media">
                             <img src="https://suchenawa.github.io/BackgroundImage/ymm1.png" />
+                            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                <!-- 卡片的标题和副标题 -->
+                                <div class="mdui-card-primary">
+                                    <div class="mdui-card-primary-title">教程页面</div>
+                                    <div class="mdui-card-primary-subtitle">存放各式教程</div>
+                                </div>
+                            </div>
 
                             <!-- 卡片中可以包含一个或多个菜单按钮 -->
                             <div class="mdui-card-menu">
@@ -194,11 +202,74 @@
                             </div>
                         </div>
 
-                        <!-- 卡片的标题和副标题 -->
-                        <div class="mdui-card-primary">
-                            <div class="mdui-card-primary-title title">教程页面</div>
-                            <div class="mdui-card-primary-subtitle">存放各式教程</div>
+                        <!-- 弹出窗口内容 -->
+                        <div class="mdui-card-actions">
+                            <button class="mdui-btn mdui-ripple mdui-text-color-teal"
+                                mdui-dialog="{target:'#Tutorials_dialog'}">点击跳转</button>
+                            <div class="mdui-dialog" id="Tutorials_dialog">
+
+                                <!-- 卡弹出窗口卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+                                <div class="mdui-card-media">
+                                    <img src="https://suchenawa.github.io/BackgroundImage/ymm1.png" />
+                                    <div
+                                        class="mdui-card-media-covered mdui-card-media-covered-gradient mdui-card-media-covered-top">
+                                        <!-- 卡片的标题和副标题 -->
+                                        <div class="mdui-card-primary">
+                                            <div class="mdui-card-primary-title ">请选择进入站点</div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 卡片中可以包含一个或多个菜单按钮 -->
+                                    <div class="mdui-card-menu">
+                                        <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i
+                                                class="mdui-icon material-icons">share</i></button> -->
+                                    </div>
+                                </div>
+                                <div class="mdui-dialog-actions mdui-dialog-actions-stacked">
+                                    <button class="mdui-btn mdui-ripple mdui-text-color-teal" mdui-dialog-close
+                                        style="text-align: center;">进入教程主界面</button>
+                                    <button class="mdui-btn mdui-ripple mdui-text-color-teal" mdui-dialog-confirm
+                                        style="text-align: center;">进入教程GFW专区</button>
+                                </div>
+                            </div>
                         </div>
+                        <!-- 弹出窗口内容结束 -->
+
+                    </div>
+                    <!-- 第一个卡片结束 -->
+
+                </div>
+
+                <div class="mdui-col-xs-12  mdui-col-sm-12 mdui-col-md-6" style="padding-bottom: 18px;">
+                    <!-- 第二个卡片 -->
+                    <div class="mdui-card">
+
+                        <!-- 卡片头部，包含头像、标题、副标题 -->
+                        <div class="mdui-card-header">
+                            <img class="mdui-card-header-avatar"
+                                src="https://suchenawa.github.io/BackgroundImage/header_logo.jpg" />
+                            <div class="mdui-card-header-title">夙宸</div>
+                            <div class="mdui-card-header-subtitle">撰写自2020/09/08</div>
+                        </div>
+
+                        <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+                        <div class="mdui-card-media">
+                            <img src="https://suchenawa.github.io/BackgroundImage/suchen_ymm_1.jpg" />
+                            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                <!-- 卡片的标题和副标题 -->
+                                <div class="mdui-card-primary">
+                                    <div class="mdui-card-primary-title">我的博客</div>
+                                    <div class="mdui-card-primary-subtitle">暂时无用途</div>
+                                </div>
+                            </div>
+
+                            <!-- 卡片中可以包含一个或多个菜单按钮 -->
+                            <div class="mdui-card-menu">
+                                <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i
+                                                        class="mdui-icon material-icons">share</i></button> -->
+                            </div>
+                        </div>
+
 
                         <!-- 卡片的内容 -->
 
@@ -208,28 +279,7 @@
                         </div>
 
                     </div>
-                    <!-- 第一个卡片结束 -->
-
-                </div>
-
-                <div class="mdui-col-xs-12  mdui-col-sm-12 mdui-col-md-6" style="padding-bottom: 18px;">
-                    <div class="mdui-card">
-                        <div class="mdui-card-media">
-                            <img src="https://suchenawa.github.io/BackgroundImage/ymm1.png" />
-                            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
-                                <div class="mdui-card-primary">
-                                    <div class="mdui-card-primary-title">教程页面</div>
-                                    <div class="mdui-card-primary-subtitle">lastupdate:2020/09/07</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mdui-card-actions">
-                            <a href="./Data/20210506/index.html">
-                                <button class="mdui-btn mdui-ripple mdui-text-color-teal">点击跳转</button>
-                            </a>
-
-                        </div>
-                    </div>
+                    <!-- 第二个卡片结束 -->
                 </div>
 
 

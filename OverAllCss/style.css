@@ -295,9 +295,17 @@
     background-color: #EEEEEE;
     color:black;
     }
-    @keyframes card{
+    /* @keyframes card{
     from {top: 64px;opacity: 0;}
     to {top: 0px;opacity: 1;}
+    } */
+    @keyframes card{
+        0%{
+            top: 64px;opacity: 0;
+        }
+        100%{
+            top: 0px;opacity: 1;
+        }
     }
     .mdui-card{
     border-radius: 10px;
