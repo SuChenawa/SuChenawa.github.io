@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="zh-cmn-Hans">
 
 <head>
     <meta charset="utf-8">
@@ -7,132 +7,371 @@
     <meta name="renderer" content="webkit" />
     <meta name="force-rendering" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="stylesheet" href="../../../../OverAllCss/mdui.css" />
-    <link rel="stylesheet" href="../../../../OverAllCss/style.css" />
-    <link rel="stylesheet" href="../../../../OverAllCss/triangle.css" />
-    <link href="../../../../fonts/fonts.css" rel="stylesheet">
-    <title>GFW-Igniter的使用</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://suchenawa.github.io/fonts/fonts.css" rel="stylesheet">
+    <!-- MDUI CSS -->
+
+    <link rel="stylesheet" href="https://suchenawa.github.io/OverAllCss/mdui.css" />
+    <link rel="stylesheet" href="https://suchenawa.github.io/OverAllCss/style.css" />
+    <link rel="stylesheet" href="https://suchenawa.github.io/OverAllCss/triangle.css" />
+    <title>夙宸-教程页面</title>
 </head>
 
-<body class="DailyWallpaper">
-    <div class="navbar-fixed">
-        <nav class="nav-extended greyglass4" style="border-radius: 0px 0px 15px 15px ;">
-            <div class="nav-wrapper" style="margin-left: 20px">
-                <a href="#" class="brand-logo center ">Igniter的使用</a>
-                <a href="#" data-activates="mobile-demo" class="button-collapse "><i class="material-icons">menu</i></a>
-            </div>
-            <div class="nav-content">
+<body class="mdui-drawer-body-left ">
 
-            </div>
-        </nav>
+    <!-- 顶部应用栏 -->
+    <div class="mdui-appbar mdui-appbar-fixed glass4" style="z-index: 5001;">
+        <!-- 使用 mdui-appbar-inset class 以切换应用栏属性 -->
+        <div class="mdui-toolbar mdui-color-theme">
+            <!-- 顶部应用栏左方菜单 -->
+            <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer'}" mdui-drawer-close
+                style="padding: 0px;width: 40px;"><i class="mdui-icon material-icons">menu</i></button>
+            <!-- 顶部应用栏左方页面名称 -->
+            <a href="javascript:;" class="mdui-typo-headline">夙宸</a>
+            <!-- 占位符 -->
+            <div class="mdui-toolbar-spacer"></div>
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
+            <a href="javascript:window.location.reload();" class="mdui-btn mdui-btn-icon"><i
+                    class="mdui-icon material-icons">refresh</i></a>
+            <!-- 顶部应用栏右方更多按钮 -->
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#aboutmore'}"><i
+                    class="mdui-icon material-icons">more_vert</i></a>
+            <!-- 顶部应用栏右方更多按钮 菜单栏目 -->
+            <ul class="mdui-menu" id="aboutmore">
+                <li class="mdui-menu-item">
+                    <a href="index.html" class="mdui-ripple">
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">arrow_back</i>转到首页
+                    </a>
+                </li>
+                <li class="mdui-menu-item">
+                    <a href="javascript:;" class="mdui-ripple">
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">file_download</i>
+                    </a>
+                </li>
+                <li class="mdui-divider"></li>
+                <li class="mdui-menu-item">
+                    <a href="PrivacyPolicy.html" class="mdui-ripple">
+                        <i class="mdui-menu-item-icon mdui-icon material-icons">cloud_download</i>隐私政策
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <br>
 
-    <div style="margin: 20px;">
-        <div class="row">
+    <!-- 引入抽屉式导航栏 -->
+    <div class="mdui-drawer mdui-drawer-full-height" style="height: 100%;background-color: white;" id="left-drawer">
+        <div style="padding-top: 58px;">
+            <!-- <button class="mdui-btn" style="width: 100%;background-color: #607D8B ; height: 65px;" mdui-drawer-close><i
+                        class="mdui-icon material-icons">close</i></button> -->
+            <div
+                style="padding: 20px 20px 1px 20px;background:url(./BackgroundImage/ymm.png); -moz-background-size: cover;-ms-background-size: cover;-webkit-background-size: cover;background-size: cover;-o-background-size: cover;">
 
-            <div class="col s12 m12 l12 white-text">
-                <a>
-                    <div class="card darken-1 hoverable white-text greyglass4" style="border-radius: 15px;">
-                        <div class="card-content white-text">
-                            <span class="card-title">
-                                <h5>Igniter应用的简单使用</h5>
-                            </span>
-                            <h6>一 . 安装（不会有人不会吧）</h6>
-                            <blockquote style="border-left: 5px solid gold;">
-                                没啥好说的
-                            </blockquote>
-                            <h6>二 . 功能介绍：</h6>
-                            <blockquote style="border-left: 5px solid gold;">
-                                <p>1 . 右上角有三个图标，最左边那个锁链状图标的功能是载入有效的Trojan配置链接</p><br>
-                                <p>2 . 第二个图标的功能是 在加载入有效的trojan配置并启动连接后 进行针对Google的通讯并返回结果（一般是连接延迟）</p><br>
-                                <p>3 . 第三个是一个次级图标</p><br>
-                                <blockquote style="border-left: 5px solid gold;">
-                                    <p>保存配置：将当前填写的配置存储进手机</p><br>
-                                    <p>加载配置：将存储在手机内的配置调用出来</p><br>
-                                    <p>过滤应用：设置代理方式，屏蔽应用模式将会绕过勾线的应用进行代理. 代理应用模式：仅仅代理选中的应用.</p><br>
-                                    <p>剩下两项无实际作用</p><br>
-                                </blockquote>
-                            </blockquote>
-                            <h6>三 . 主页面配置</h6>
-                            <blockquote style="border-left: 5px solid gold;">
-                                <p>1 . 远程服务标识：用于区分不同服务器的名字，可以随意填写或者不填写</p><br>
-                                <p>2 . 远程地址：远程服务器的地址</p><br>
-                                <p>3 . 远程端口：远程服务器开放的端口，使用HTTPS的Trojan默认为443</p><br>
-                                <p>4 . 密码：服务商提供给你的密码</p><br>
-                                <p>余项配置：一般不需要开启IPv6 . 一般需要开启验证证书，否则可能出现连接被拒绝的问题 . 过滤大陆域名可以有效防止开启连接后国内网站访问速度过慢</p>
-                            </blockquote>
-                            <h6>一切都就绪了！点击“连接”开始看色图之旅吧！</h6>
-                        </div>
-                        <div class="white-text collection-header" style="margin: 20px;">
-                            <p class="blue-text">项目地址：</p>
-                            <a class="red-text"
-                                href="https://github.com/trojan-gfw/igniter/">https://github.com/trojan-gfw/igniter/</a>
-                        </div>
-                        <br>
-
+                <div style="width: 100%; text-align: center; ">
+                    <div class="mdui-ripple"
+                        style="border-radius: 50px; width: 80px;text-align: center;margin: 0 auto;">
+                        <img src="https://suchenawa.github.io/BackgroundImage/header_logo.jpg" width="80px"
+                            style="border-radius: 50px;" draggable="false">
                     </div>
-                </a>
+                    <h2 style="color: white;text-align: center;">夙宸</h2>
+                </div>
+
             </div>
 
 
+            <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+                <!-- 抽屉式导航栏内第一个菜单 -->
+                <div class="mdui-collapse-item" id="01">
+                    <!-- 抽屉式导航栏内第一个模块菜单标题栏 -->
+                    <div class="mdui-collapse-item-header  mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">home</i>
+                        <div class="mdui-list-item-content">主页</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <!-- 抽屉式导航栏内第一个模块子菜单 -->
+                    <div class="mdui-collapse-item-body mdui-list ">
+                        <a href="https://suchenawa.github.io/" class="mdui-list-item mdui-ripple">主页</a>
+                        <a href="index.html#WebsiteRunningTime" class="mdui-list-item mdui-ripple ">网站运行时间</a>
+                    </div>
+                </div>
+                <!-- 分割线 -->
+                <!-- <li class="mdui-divider mdui-m-y-0"></li> -->
 
+                <!-- 抽屉式导航栏内第二个菜单 -->
+                <div class="mdui-collapse-item ">
+                    <!-- 抽屉式导航栏内第二个模块菜单标题栏 -->
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red">developer_mode</i>
+                        <div class="mdui-list-item-content">博客</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <!-- 抽屉式导航栏内第二个模块子菜单 -->
+                    <div class="mdui-collapse-item-body mdui-list">
+                        <a href="https://www.lfmemz.ltd/" class="mdui-list-item mdui-ripple ">博客主页</a>
+                        <a href="https://www.lfmemz.ltd/index.php/%e5%85%b3%e4%ba%8e%e5%a4%99%e5%ae%b8/"
+                            class="mdui-list-item mdui-ripple ">关于夙宸</a>
+                        <a href="https://www.lfmemz.ltd/index.php/%e9%9a%90%e7%a7%81%e6%94%bf%e7%ad%96/"
+                            class="mdui-list-item mdui-ripple ">博客隐私政策</a>
+                    </div>
+                </div>
+                <!-- 分割线 -->
+                <!-- <li class="mdui-divider mdui-m-y-0"></li> -->
+
+                <!-- 抽屉式导航栏内第三个菜单 -->
+                <div class="mdui-collapse-item mdui-collapse-item-open">
+                    <!-- 抽屉式导航栏内第三个模块菜单标题栏 -->
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">book</i>
+                        <div class="mdui-list-item-content">教程页面</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <!-- 抽屉式导航栏内第三个模块子菜单 -->
+                    <div class="mdui-collapse-item-body mdui-list">
+                        <a href="https://suchenawa.github.io/Tutorials/index.html" class="mdui-list-item mdui-ripple mdui-list-item-active">教程页首页</a>
+                        <a href="https://suchenawa.github.io/Tutorials/GFW/index.html" class="mdui-list-item mdui-ripple ">GFW区域</a>
+                    </div>
+                </div>
+                <!-- 分割线 -->
+                <!-- <li class="mdui-divider mdui-m-y-0"></li> -->
+
+                <!-- 抽屉式导航栏内第四个菜单 -->
+                <div class="mdui-collapse-item ">
+                    <!-- 抽屉式导航栏内第四个模块菜单标题栏 -->
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-yellow">more_horiz</i>
+                        <div class="mdui-list-item-content">更多</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <!-- 抽屉式导航栏内第四个模块子菜单 -->
+                    <div class="mdui-collapse-item-body mdui-list">
+                        <a href="" class="mdui-list-item mdui-ripple ">NoData</a>
+                        <a href="" class="mdui-list-item mdui-ripple ">NoData</a>
+                    </div>
+                </div>
+                <!-- 分割线 -->
+                <li class="mdui-divider mdui-m-y-0"></li>
+                <div class="mdui-list-item mdui-ripple">
+                    <i class="mdui-list-item-icon mdui-icon material-icons">error</i>
+                    <div class="mdui-list-item-content">关于</div>
+                </div>
+
+            </div>
         </div>
     </div>
 
 
+    <!-- 背景图片占位元素 -->
+    <!-- <div class="SuChenWallpaper" style="width: 100%; height: 100%; position: fixed;z-index: -1;"></div> -->
+    <!-- 占位元素 顶部65px -->
 
+    <!-- 背景层 勿删 -->
+    <div class="SuChenWallpaper">
+        <div style=" width: 100%;padding-top: 65px;"></div>
 
+        <!--  内容层 -->
+        <div class="mdui-container " style="min-height: 800px; padding-top: 20px;">
 
+            <div class="mdui-rows">
+                <div class="mdui-col-xs-12 mdui-col-sm-12 mdui-col-md-10 mdui-col-offset-md-1" style="padding-bottom: 18px;">
+                    <div class="mdui-card">
+                        <div class="mdui-card-media">
+                          <div class="SuChenWallpaper1" style="height: 100px;">
 
+                          </div>
+                            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                <div class="mdui-card-primary">
+                                    <div class="mdui-card-primary-title">Igniter APP的使用</div>
+                                    <div class="mdui-card-primary-subtitle">lastupdate:2020/09/07</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdui-card-actions">
+                            <a href="./Data/20210426/index.html">
+                                <button class="mdui-btn mdui-ripple mdui-text-color-teal">点击跳转</button>
+                            </a>
 
-
-
-    <div class="fixed-action-btn horizontal">
-        <a class="btn-floating btn-large red">
-            <i class="large material-icons">mode_edit</i>
-        </a>
-        <ul>
-            <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-            <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-            <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-            <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-        </ul>
-    </div>
-
-
-
-
-
-    <footer class="page-footer greyglass4" style="border-radius:15px 15px  0px 0px ;">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">内容支持：夙宸</h5>
-                    <p class="grey-text text-lighten-4">关于我</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">相关链接</h5>
+
+
+            </div>
+
+        </div>
+
+        <div style="width: 100%;padding-top: 10px;height: 30px;"></div>
+        <!-- 网站运行时间 -->
+        <div id="WebsiteRunningTime" class="mdui-container-fluid" style="overflow: hidden;padding-bottom: 20px;">
+            <div class="mdui-rows">
+                <div
+                    class="mdui-col-xl-4 mdui-col-lg-6 mdui-col-md-8 mdui-col-xs-10  mdui-col-offset-xl-4 mdui-col-offset-lg-3 mdui-col-offset-md-2 mdui-col-offset-xs-1">
+
+                    <div class="blackglass2 mdui-hoverable " style=" width: 100%;border-radius: 8px;">
+                        <div class="mdui-container-fluid mdui-shadow-6 " style="padding: 15px;border-radius: 8px;">
+                            <div class="mdui-row">
+                                <div class="mdui-col-md-6 mdui-col-xs-10 mdui-col-offset-md-3 mdui-col-offset-xs-1">
+                                    <div>
+                                        <p style="color: white;text-align: center;font-size: 18px;">本网站已运行</p>
+                                    </div>
+
+                                </div>
+                                <div class="mdui-col-md-6 mdui-col-xs-10 mdui-col-offset-md-3 mdui-col-offset-xs-1">
+                                    <div>
+                                        <div style="text-align: center;font-size: 18px;color: white;"><span
+                                                id="blog_running_days">0</span> days , <span
+                                                id="blog_running_hours">0</span> h , <span
+                                                id="blog_running_mins">0</span> m
+                                            , <span id="blog_running_secs">0</span> s</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <script no-pjax="">
+                            var blog_running_days = document.getElementById("blog_running_days");
+                            var blog_running_hours = document.getElementById("blog_running_hours");
+                            var blog_running_mins = document.getElementById("blog_running_mins");
+                            var blog_running_secs = document.getElementById("blog_running_secs");
+                            function refresh_blog_running_time() {
+                                var time = new Date() - new Date(2019, 2, 7, 8, 0, 0);
+                                var d = parseInt(time / 24 / 60 / 60 / 1000);
+                                var h = parseInt(time % (24 * 60 * 60 * 1000) / 60 / 60 / 1000);
+                                var m = parseInt(time % (60 * 60 * 1000) / 60 / 1000);
+                                var s = parseInt(time % (60 * 1000) / 1000);
+                                blog_running_days.innerHTML = d;
+                                blog_running_hours.innerHTML = h;
+                                blog_running_mins.innerHTML = m;
+                                blog_running_secs.innerHTML = s;
+                            }
+                            refresh_blog_running_time();
+                            if (typeof (bottomTimeIntervalHasSet) == "undefined") {
+                                var bottomTimeIntervalHasSet = true;
+                                setInterval(function () { refresh_blog_running_time(); }, 500);
+                            }
+                        </script>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!-- <div style="overflow: hidden;">
+                <div class="triangle" style="overflow: hidden;">
                     <ul>
-                        <li><a class="red-text text-lighten-3">这里没有任何数据</a></li>
-                        <!--
-                  <li><a class="grey-text text-lighten-3" href="https://www.lfmemz.ltd">夙宸的主站</a></li>
-				  <li><a class="grey-text text-lighten-3" href="https://www.lfmemz.ltd/furry/">夙宸的furry小站</a></li>
-				  <li><a class="grey-text text-lighten-3" href="https://www.lfmemz.ltd/rtgj/">RTGJ站点</a></li>
--->
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </div>
-            </div>
+                <div class="triangle1" style="overflow: hidden;">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="triangle2" style="overflow: hidden;">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="triangle3" style="overflow: hidden;">
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+        
+            </div>-->
         </div>
-        <div class="footer-copyright">
-            <div class="container">
-                Copyright © 2021 夙宸 · All Rights Reserved
-                <a class="grey-text text-lighten-4 right" href="https://www.lfmemz.ltd">QQ群:NULL</a>
-            </div>
-        </div>
-    </footer>
 
+
+
+
+
+
+
+        <!-- 网页页脚 -->
+        <div class="blackglass2" style=" width: 100%;">
+            <div class="mdui-container-fluid" style="padding: 10px;">
+                <div class="mdui-row">
+                    <div class="mdui-col-md-6 mdui-col-xs-12">
+                        <div>
+                            <p style="color: white;text-align: center;">Copyright © 2019-2021 SuChen</p>
+                        </div>
+
+                    </div>
+                    <div class="mdui-col-md-6 mdui-col-xs-12">
+                        <div>
+                            <p style="color: white;text-align: center;">加入我的群组：NULL</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- 右下角悬浮菜单 -->
+        <div class="mdui-fab-wrapper" id="exampleFab">
+            <button class="mdui-fab mdui-ripple mdui-color-theme-accent">
+                <!-- 默认显示的图标 -->
+                <i class="mdui-icon material-icons">add</i>
+
+                <!-- 在拨号菜单开始打开时，平滑切换到该图标，若不需要切换图标，则可以省略该元素 -->
+                <i class="mdui-icon mdui-fab-opened material-icons">add</i>
+            </button>
+            <!-- 悬浮菜单内容 -->
+            <div class="mdui-fab-dial">
+                <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink"><i
+                        class="mdui-icon material-icons">backup</i></button>
+                <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red"><i
+                        class="mdui-icon material-icons">bookmark</i></button>
+                <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-orange"><i
+                        class="mdui-icon material-icons">access_alarms</i></button>
+                <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue"><i
+                        class="mdui-icon material-icons">touch_app</i></button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://suchenawa.github.io/js/mdui.js"></script>
+    <script src="https://suchenawa.github.io/js/init.js"></script>
 </body>
 
 </html>
