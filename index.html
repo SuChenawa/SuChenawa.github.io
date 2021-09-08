@@ -10,9 +10,9 @@
 
     <link href="./fonts/fonts.css" rel="stylesheet">
     <!-- MDUI CSS -->
-
-    <link rel="stylesheet" href="./OverAllCss/mdui.css" />
     <link rel="stylesheet" href="./OverAllCss/style.css" />
+    <link rel="stylesheet" href="./OverAllCss/mdui.css" />
+
     <link rel="stylesheet" href="./OverAllCss/triangle.css" />
     <title>夙宸-主页</title>
 </head>
@@ -126,7 +126,8 @@
                     </div>
                     <!-- 抽屉式导航栏内第三个模块子菜单 -->
                     <div class="mdui-collapse-item-body mdui-list">
-                        <a href="https://suchenawa.github.io/Tutorials/index.html" class="mdui-list-item mdui-ripple ">教程页首页</a>
+                        <a href="https://suchenawa.github.io/Tutorials/index.html"
+                            class="mdui-list-item mdui-ripple ">教程页首页</a>
                         <a href="" class="mdui-list-item mdui-ripple ">GFW区域</a>
                     </div>
                 </div>
@@ -168,9 +169,75 @@
         <div style=" width: 100%;padding-top: 65px;"></div>
 
         <!--  内容层 -->
-        <div style="height: 800px;">
+        <div class="mdui-container " style="min-height: 800px; padding-top: 20px;">
+
+            <div class="mdui-rows">
+                <div class="mdui-col-xs-12 mdui-col-sm-12 mdui-col-md-6" style="padding-bottom: 18px;">
+                    <!-- 第一个卡片 -->
+                    <div class="mdui-card">
+
+                        <!-- 卡片头部，包含头像、标题、副标题 -->
+                        <div class="mdui-card-header">
+                            <img class="mdui-card-header-avatar" src="https://suchenawa.github.io/BackgroundImage/header_logo.jpg" />
+                            <div class="mdui-card-header-title">夙宸</div>
+                            <div class="mdui-card-header-subtitle">撰写自2020/09/08</div>
+                        </div>
+
+                        <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+                        <div class="mdui-card-media">
+                            <img src="https://suchenawa.github.io/BackgroundImage/ymm1.png" />
+
+                            <!-- 卡片中可以包含一个或多个菜单按钮 -->
+                            <div class="mdui-card-menu">
+                                <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i
+                                        class="mdui-icon material-icons">share</i></button> -->
+                            </div>
+                        </div>
+
+                        <!-- 卡片的标题和副标题 -->
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title title">教程页面</div>
+                            <div class="mdui-card-primary-subtitle">存放各式教程</div>
+                        </div>
+
+                        <!-- 卡片的内容 -->
+
+                        <!-- 卡片的按钮 -->
+                        <div class="mdui-card-actions">
+                            <button class="mdui-btn mdui-ripple mdui-text-color-teal">点击跳转</button>
+                        </div>
+
+                    </div>
+                    <!-- 第一个卡片结束 -->
+
+                </div>
+
+                <div class="mdui-col-xs-12  mdui-col-sm-12 mdui-col-md-6" style="padding-bottom: 18px;">
+                    <div class="mdui-card">
+                        <div class="mdui-card-media">
+                            <img src="https://suchenawa.github.io/BackgroundImage/ymm1.png" />
+                            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                <div class="mdui-card-primary">
+                                    <div class="mdui-card-primary-title">教程页面</div>
+                                    <div class="mdui-card-primary-subtitle">lastupdate:2020/09/07</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdui-card-actions">
+                            <a href="./Data/20210506/index.html">
+                                <button class="mdui-btn mdui-ripple mdui-text-color-teal">点击跳转</button>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
 
         </div>
+
+        <div style="width: 100%;padding-top: 10px;height: 30px;"></div>
 
 
         <!-- 网站运行时间 -->
@@ -227,7 +294,7 @@
 
                 </div>
             </div>
-<!-- 
+            <!-- 
             <div style="overflow: hidden;">
                 <div class="triangle" style="overflow: hidden;">
                     <ul>
@@ -341,7 +408,7 @@
 
 
     </div>
-   
+
 
 
     <script src="./js/mdui.js"></script>
