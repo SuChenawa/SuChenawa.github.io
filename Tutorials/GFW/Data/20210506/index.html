@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!--Import Google Icon Font-->
+    <link href="../../../fonts/fonts.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="../../../OverAllCss/style1.css" />
+    <link type="text/css" rel="stylesheet" href="../../../OverAllCss/style.css" />
+    <title>GFW-Qv2ray的安装与使用</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body class="DailyWallpaper">
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
+    <!-- <div class="navbar-fixed" style="margin:10px;width: 98%;">
+        <nav class="nav-extended #FF7628" style="border-radius: 25px ;">
+            <div class="nav-wrapper" style="margin-left: 20px">
+                <a href="#" class="brand-logo center">Qv2ray的安装与使用</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div> -->
+    <!-- <div class="navbar-fixed left" style="padding:5px;">
+        <nav class="nav-extended #FF7628" style="border-radius: 25px ;">
+            <div class="nav-wrapper" style="margin-left: 20px">
+                <a href="#" class="brand-logo center" style="font-size:20px;">Qv2ray的安装与使用</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </div> -->
+
+    <div style="margin: 20px 20px 50px 20px;">
+        <div class="row">
+
+            <div class="col s12 m12 l12 white-text">
+                <div class="card darken-1 hoverable  greyglass4" style="border-radius: 15px;">
+                    <div class="card-content white-text">
+                        <span class="card-title"><h5 class="blue-text">Qv2ray的安装与使用</h5></span>
+                        <h6>简介</h6>
+                        <p>Qv2ray 是一个多平台支持多种协议的强大软件</p>
+                        <p>Linux / Windows / macOS 跨平台 V2Ray 客户端 | 支持 VMess / VLESS / SSR / Trojan / Trojan-Go / NaiveProxy / HTTP / HTTPS / SOCKS5 | 使用 C++ / Qt 开发 | 可拓展插件式设计</p>
+                        <h6 class="blue-text">一 . 安装</h6>
+                        <div class="goldblockquote">
+                            <p>1 . 安装Qv2ray本体（多种方式这里指通过可执行应用程序安装包安装）</p>
+                            <br>
+                            <div class="goldblockquote">
+                                <p>下载地址:</p>
+                                <p><a class="btn" style="margin: 5px;" href="https://github.com/Qv2ray/Qv2ray/releases">点击跳转</a></p>
+                            </div>
+                            <br>
+                            <p>2 . 双击安装并一路默认下一步</p>
+                        </div>
+                        <h6 class="blue-text">二 . 安装V2ray-core</h6>
+                        <div class="goldblockquote">
+                            <p>1 . 下载v2ray-core</p>
+                            <br>
+                            <div class="goldblockquote">
+                                <p>下载地址:</p>
+                                <p><a class="btn" style="margin: 5px;" href="https://github.com/v2fly/v2ray-core/releases">点击跳转</a></p>
+                            </div>
+                            <br>
+                            <p>2 . 安装v2ray-core</p>
+                            <br>
+                            <div class="goldblockquote">
+                                <p>将压缩包内文件解压到新建的vcore文件夹并确保vcore文件夹内含有v2ray.exe；wv2ray.exe以及其配置文件</p>
+                                <br>
+                                <p>打开qv2ray，点击左上角插件按钮，在新界面点击左下角"打开本地插件目录"</p>
+                                <br>
+                                <p>此时Windows会弹出位于"C:\Users\你的用户名\AppData\Local\qv2ray\plugins"的资源管理器,请你跳转到上级目录qv2ray中将vcore文件夹移动进去使其与Plugins处于同一文件夹</p>
+                            </div>
+                            <br>
+                            <p>至此，v2ray-core安装完毕</p>
+                        </div>
+                        <h6>三 . 安装Trojan-go插件</h6>
+                        <div class="goldblockquote">
+                            <p>下载Trojan-go插件放入插件文件夹后重启qv2ray即可完成</p>
+                            <div class="goldblockquote">
+                                <p>下载地址:</p>
+                                <p><a class="btn" style="margin: 5px;" href="https://github.com/Qv2ray/QvPlugin-Trojan-Go/releases">点击跳转</a></p>
+                            </div>
+                            <p style="color: red;">注意：请对应版本下载；QvPlugin-Trojan-Go v3.0.0-pre3 prerelease仅可用于Qv2ray v2.7.0-pre1</p>
+                        </div>
+                        <h6>四 . 导入服务器</h6>
+                        <div class="goldblockquote">
+                            <p>点击左下角新建，在新的导入文件界面中选择手动输入，点击"打开连接编辑器"按钮</p>
+                            <p>主机填写服务器地址，端口默认443类型选择Trojan/Trojan-go（由你安装的插件决定），右方其他设置勾选Mux，并将并发设置为8，左下角Password填写密码并勾选ignore Certificate和TCP Fast Open</p>
+                            <p>点击OK 确定设置 在主界面双击设定好的配置或者右键打开即可</p>
+                        </div>
+                    </div>
+                    <div class="white-text collection-header" style="margin: 20px;">
+                        <p class="white-text">相关链接：</p>
+                        <hr>
+                        <a class="btn" href="https://qv2ray.net/">官方网站</a>
+                        <a class="btn" href="https://qv2ray.net/lang/zh/getting-started/">官方文档</a>
+                        <a class="btn" href="https://github.com/Qv2ray/Qv2ray/">项目仓库</a>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div style="position: fixed;z-index: 997;text-align: center;bottom:0px;width: 100%;padding: 0px;">
+        <div class="glass1" style="width: 100%;height: 50px">
+            <a href="#" class="brand-logo center" style="color: white; font-size:25px;vertical-align:middle;line-height: 50px;">Qv2ray的安装与使用</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- 
+    <footer class="page-footer " style="border-radius:15px 15px  0px 0px ;">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">内容支持：夙宸</h5>
+                    <p class="grey-text text-lighten-4">关于我</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">相关链接</h5>
+                    <ul>
+                        <li><a class="red-text text-lighten-3">这里没有任何数据</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                Copyright © 2021 夙宸 · All Rights Reserved
+                <a class="grey-text text-lighten-4 right" href="https://www.lfmemz.ltd">QQ群:NULL</a>
+            </div>
+        </div>
+    </footer> -->
+
+</body>
+
+</html>

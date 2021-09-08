@@ -8,13 +8,13 @@
     <meta name="force-rendering" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <link href="./fonts/fonts.css" rel="stylesheet">
+    <link href="../fonts/fonts.css" rel="stylesheet">
     <!-- MDUI CSS -->
 
-    <link rel="stylesheet" href="./OverAllCss/mdui.css" />
-    <link rel="stylesheet" href="./OverAllCss/style.css" />
-    <link rel="stylesheet" href="./OverAllCss/triangle.css" />
-    <title>夙宸-主页</title>
+    <link rel="stylesheet" href="../OverAllCss/mdui.css" />
+    <link rel="stylesheet" href="../OverAllCss/style.css" />
+    <link rel="stylesheet" href="../OverAllCss/triangle.css" />
+    <title>夙宸-教程页面</title>
 </head>
 
 <body class="mdui-drawer-body-left ">
@@ -69,8 +69,8 @@
                 <div style="width: 100%; text-align: center; ">
                     <div class="mdui-ripple"
                         style="border-radius: 50px; width: 80px;text-align: center;margin: 0 auto;">
-                        <img src="./BackgroundImage/header_logo.jpg" width="80px" style="border-radius: 50px;"
-                            draggable="false">
+                        <img src="https://suchenawa.github.io/BackgroundImage/header_logo.jpg" width="80px"
+                            style="border-radius: 50px;" draggable="false">
                     </div>
                     <h2 style="color: white;text-align: center;">夙宸</h2>
                 </div>
@@ -80,7 +80,7 @@
 
             <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
                 <!-- 抽屉式导航栏内第一个菜单 -->
-                <div class="mdui-collapse-item mdui-collapse-item-open" id="01">
+                <div class="mdui-collapse-item" id="01">
                     <!-- 抽屉式导航栏内第一个模块菜单标题栏 -->
                     <div class="mdui-collapse-item-header  mdui-list-item mdui-ripple">
                         <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">home</i>
@@ -89,7 +89,7 @@
                     </div>
                     <!-- 抽屉式导航栏内第一个模块子菜单 -->
                     <div class="mdui-collapse-item-body mdui-list ">
-                        <a href="index.html" class="mdui-list-item mdui-ripple mdui-list-item-active">主页</a>
+                        <a href="index.html" class="mdui-list-item mdui-ripple">主页</a>
                         <a href="index.html#WebsiteRunningTime" class="mdui-list-item mdui-ripple ">网站运行时间</a>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                     </div>
                     <!-- 抽屉式导航栏内第二个模块子菜单 -->
                     <div class="mdui-collapse-item-body mdui-list">
-                        <a href="https://www.lfmemz.ltd/" class="mdui-list-item mdui-ripple ">播客主页</a>
+                        <a href="https://www.lfmemz.ltd/" class="mdui-list-item mdui-ripple ">博客主页</a>
                         <a href="https://www.lfmemz.ltd/index.php/%e5%85%b3%e4%ba%8e%e5%a4%99%e5%ae%b8/"
                             class="mdui-list-item mdui-ripple ">关于夙宸</a>
                         <a href="https://www.lfmemz.ltd/index.php/%e9%9a%90%e7%a7%81%e6%94%bf%e7%ad%96/"
@@ -117,7 +117,7 @@
                 <!-- <li class="mdui-divider mdui-m-y-0"></li> -->
 
                 <!-- 抽屉式导航栏内第三个菜单 -->
-                <div class="mdui-collapse-item">
+                <div class="mdui-collapse-item mdui-collapse-item-open">
                     <!-- 抽屉式导航栏内第三个模块菜单标题栏 -->
                     <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
                         <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">book</i>
@@ -126,7 +126,7 @@
                     </div>
                     <!-- 抽屉式导航栏内第三个模块子菜单 -->
                     <div class="mdui-collapse-item-body mdui-list">
-                        <a href="https://suchenawa.github.io/Tutorials/index.html" class="mdui-list-item mdui-ripple ">教程页首页</a>
+                        <a href="" class="mdui-list-item mdui-ripple mdui-list-item-active">教程页首页</a>
                         <a href="" class="mdui-list-item mdui-ripple ">GFW区域</a>
                     </div>
                 </div>
@@ -168,11 +168,32 @@
         <div style=" width: 100%;padding-top: 65px;"></div>
 
         <!--  内容层 -->
-        <div style="height: 800px;">
+        <div style="height: 800px; padding-top: 20px;">
+            <div class="mdui-rows">
+                <div
+                    class="mdui-col-lg-6 mdui-col-md-8 mdui-col-xs-10  mdui-col-offset-lg-3 mdui-col-offset-md-2 mdui-col-offset-xs-1">
+                    <div class="mdui-card">
+                        <div class="mdui-card-media">
+                            <img src="https://suchenawa.github.io/BackgroundImage/ymm.png" />
+                            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                <div class="mdui-card-primary">
+                                    <div class="mdui-card-primary-title">GFW区域</div>
+                                    <div class="mdui-card-primary-subtitle">仅供参考</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdui-card-actions">
+                            <a href="./GFW/index.html">
+                                <button class="mdui-btn mdui-ripple mdui-text-color-teal">点击跳转</button>
+                            </a>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-
+<div style="width: 100%;padding-top: 10px;height: 150px;"></div>
         <!-- 网站运行时间 -->
         <div id="WebsiteRunningTime" class="mdui-container-fluid" style="overflow: hidden;">
             <div class="mdui-rows">
@@ -227,8 +248,8 @@
 
                 </div>
             </div>
-<!-- 
-            <div style="overflow: hidden;">
+
+            <!-- <div style="overflow: hidden;">
                 <div class="triangle" style="overflow: hidden;">
                     <ul>
                         <li></li>
@@ -286,7 +307,7 @@
                     </ul>
                 </div>
         
-            </div> -->
+            </div>-->
         </div>
 
 
@@ -341,11 +362,11 @@
 
 
     </div>
-   
 
 
-    <script src="./js/mdui.js"></script>
-    <script src="./js/init.js"></script>
+
+    <script src="../js/mdui.js"></script>
+    <script src="../js/init.js"></script>
 </body>
 
 </html>
