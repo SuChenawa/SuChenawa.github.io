@@ -71,7 +71,8 @@
                 <a href="javascript:;" class="mdui-typo-headline">夙宸</a>
                 <!-- 占位符 -->
                 <div class="mdui-toolbar-spacer"></div>
-                <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
+                <a href="javascript:window.history.back();" class="mdui-btn mdui-btn-icon"><i
+                        class="mdui-icon material-icons">arrow_back</i></a>
                 <a href="javascript:window.location.reload();" class="mdui-btn mdui-btn-icon"><i
                         class="mdui-icon material-icons">refresh</i></a>
                 <!-- 顶部应用栏右方更多按钮 -->
@@ -145,7 +146,7 @@
                         </div>
                         <!-- 抽屉式导航栏内第二个模块子菜单 -->
                         <div class="mdui-collapse-item-body mdui-list">
-                            <a href="https://www.lfmemz.ltd/" class="mdui-list-item mdui-ripple ">播客主页</a>
+                            <a href="https://www.lfmemz.ltd/" class="mdui-list-item mdui-ripple ">博客主页</a>
                             <a href="https://www.lfmemz.ltd/index.php/%e5%85%b3%e4%ba%8e%e5%a4%99%e5%ae%b8/"
                                 class="mdui-list-item mdui-ripple ">关于夙宸</a>
                             <a href="https://www.lfmemz.ltd/index.php/%e9%9a%90%e7%a7%81%e6%94%bf%e7%ad%96/"
@@ -549,7 +550,24 @@
     <script src="https://suchenawa.github.io/js/mdui.js"></script>
     <script src="https://suchenawa.github.io/js/init.js"></script>
     <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var ibackbutton = document.getElementById("backbuttonstate");
+            if (ibackbutton.value == "0") {
+                // Page has been loaded for the first time - Set marker
+                ibackbutton.value = "1";
+                //alert('First time load');
 
+            } else {
+                // Back button has been fired.. Do Something different..
+                //alert('Previously loaded - Returned from Back button');
+                $('#loadingpage').removeClass('loadingpageclass')
+                $('.main-body').css('display', 'block')
+                $('body').css('overflow', 'unset')
+                $(".loadingdiv1").hide();
+            }
+        }, false);
+    </script>
 
     <script>
         document.onreadystatechange = function () {
@@ -569,20 +587,7 @@
 
         }
     </script>
-   
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-       var ibackbutton = document.getElementById("backbuttonstate");
-       if (ibackbutton.value == "0") {
-         // Page has been loaded for the first time - Set marker
-         ibackbutton.value = "1";
-         alert('First time load');
-       } else {
-         // Back button has been fired.. Do Something different..
-         alert('Previously loaded - Returned from Back button');
-       }
-    }, false);
-    </script>
+
 </body>
 
 </html>
