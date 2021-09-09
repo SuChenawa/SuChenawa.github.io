@@ -1,5 +1,7 @@
 /* 透明纸背景 */
 
+
+
 /* body {
     background-image: url("../bg/paperbg.png");
     background-repeat: repeat;
@@ -10,6 +12,13 @@
     } */
 
 
+
+/* 全局设置图片不可拖动 */
+    img{
+        -webkit-user-drag: none;
+    }
+
+    
 /* 每日壁纸背景 */
 
 .DailyWallpaper {
