@@ -78,6 +78,13 @@
     background-size: cover;
     -o-background-size: cover;
 }
+.image{
+  
+        width: 100%;
+        background:0 0 no-repeat center center;
+
+
+}
 
 .SuChenWallpaper {
     width: 100%;
@@ -525,4 +532,9 @@
       animation-delay: 0.9s;
     }
 
-    
+.EH-sample{
+    padding: 5px 3px;
+}
+.EH-sample a{
+    background-color:antiquewhite;
+}
