@@ -17,10 +17,21 @@
     img{
         -webkit-user-drag: none;
     }
-    
+
     .loadingpageglass{
-        background: rgba(0, 0, 0, 0.65);
+        background: rgba(0, 0, 0, 0.10);
+        backdrop-filter: blur(100px);
+        animation: loadingglassanimation 2s  linear ;
+    }
+    @keyframes loadingglassanimation{
+        0%{
+            background: rgba(0, 0, 0, 0.65);
         backdrop-filter: blur(60px);
+        }
+        100%{
+            background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(100px);
+        }
     }
 
 
