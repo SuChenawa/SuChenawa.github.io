@@ -111,8 +111,6 @@
                         </div>
                         <h2 style="color: white;text-align: center;">夙宸</h2>
                     </div>
-
-                    <input id="backbuttonstate" type="text" value="0" style="display:none;" />
                 </div>
 
 
@@ -550,24 +548,7 @@
     <script src="https://suchenawa.github.io/js/mdui.js"></script>
     <script src="https://suchenawa.github.io/js/init.js"></script>
     <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var ibackbutton = document.getElementById("backbuttonstate");
-            if (ibackbutton.value == "0") {
-                // Page has been loaded for the first time - Set marker
-                ibackbutton.value = "1";
-                //alert('First time load');
 
-            } else {
-                // Back button has been fired.. Do Something different..
-                //alert('Previously loaded - Returned from Back button');
-                $('#loadingpage').removeClass('loadingpageclass')
-                $('.main-body').css('display', 'block')
-                $('body').css('overflow', 'unset')
-                $(".loadingdiv1").hide();
-            }
-        }, false);
-    </script>
 
     <script>
         document.onreadystatechange = function () {

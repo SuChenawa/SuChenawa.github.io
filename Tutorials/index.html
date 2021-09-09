@@ -399,40 +399,12 @@
     <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var ibackbutton = document.getElementById("backbuttonstate");
-            if (ibackbutton.value == "0") {
-                // Page has been loaded for the first time - Set marker
-                ibackbutton.value = "1";
-                //alert('First time load');
-
-            } else {
-                // Back button has been fired.. Do Something different..
-                //alert('Previously loaded - Returned from Back button');
-                $('#loadingpage').removeClass('loadingpageclass')
+        document.onreadystatechange = function () {
+            if (document.readyState == "complete") {
+                $(".loadingdiv1").hide();
                 $('.main-body').css('display', 'block')
                 $('body').css('overflow', 'unset')
-                $(".loadingdiv1").hide();
             }
-        }, false);
-    </script>
-
-    <script>
-        document.onreadystatechange = function () {
-            setTimeout(function () {
-                if (document.readyState == "complete") {
-                    $('#loadingpage').addClass('loadingpageclasslater')
-                    $('#loadingpage').removeClass('loadingpageclass')
-                    $('#loadingpageprogressbar').css('display', 'none')
-                    $('#loadingpagewelcometext').css('display', 'unset')
-                    setTimeout(function () {
-                        $('.main-body').css('display', 'block')
-                        $('body').css('overflow', 'unset')
-                        $(".loadingdiv1").hide();
-                    }, 1000);
-                }
-            }, 2100);
-
         }
     </script>
 </body>
