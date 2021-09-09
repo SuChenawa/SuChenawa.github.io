@@ -17,8 +17,8 @@
     <title>夙宸-主页</title>
 </head>
 
-<body class="mdui-drawer-body-left">
-    <div class="loadingdiv1" style="z-index: 9999;position:fixed;background-color: blue;width: 100%;height: 100%;">
+<body >
+    <div class="loadingdiv1 blackglass4" style="z-index: 9999;position:fixed;width: 100%;height: 100%;padding: 50px;">
         <div class="container">
             <div class="wrapper">
                 <div class="loader">
@@ -40,8 +40,17 @@
                     <div class="dot"></div>
                 </div>
             </div>
-            <div class="text">Please wait</div>
+            <div class="text">
+                加载中
+            </div>
+            <div class="loadingprogressbar" style="width: 100%;">
+                <div class="mdui-progress">
+                    <div class="mdui-progress-indeterminate mdui-color-teal"></div>
+                  </div>
+            </div>
         </div>
+      
+      
     </div>
 
 
@@ -83,7 +92,8 @@
             </div>
         </div>
         <!-- 引入抽屉式导航栏 -->
-        <div class="mdui-drawer mdui-drawer-full-height" style="height: 100%;background-color: white;" id="left-drawer">
+        <div class="mdui-drawer mdui-drawer-full-height mdui-drawer-close" style="height: 100%;background-color: white;"
+            id="left-drawer">
             <div style="padding-top: 58px;">
                 <!-- <button class="mdui-btn" style="width: 100%;background-color: #607D8B ; height: 65px;" mdui-drawer-close><i
                         class="mdui-icon material-icons">close</i></button> -->

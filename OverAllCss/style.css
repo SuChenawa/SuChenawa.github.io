@@ -389,9 +389,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
+      height: 100%;
       text-align: center;
-      background: #0079d7;
+      width: 100%;
       z-index: 9999;
     }
     .container{
@@ -415,7 +415,7 @@
       top: 30px;
      height: 7px;
      width: 7px;
-     background: #42A5F5;
+     background: #4491FF;
      border-radius: 50%;
      position: relative;
     }
@@ -425,7 +425,12 @@
       font-size: 25px;
       font-weight: 400;
       font-family: 'Poppins',sans-serif;
-      color: #42A5F5;
+      color: #4491FF;
+    }
+    .loadingprogressbar{
+        display: inherit;
+        position: absolute;
+        bottom: -120px;
     }
     @keyframes rotate {
       30%{
