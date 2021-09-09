@@ -1,5 +1,7 @@
 /* 透明纸背景 */
 
+
+
 /* body {
     background-image: url("../bg/paperbg.png");
     background-repeat: repeat;
@@ -10,6 +12,13 @@
     } */
 
 
+
+/* 全局设置图片不可拖动 */
+    img{
+        -webkit-user-drag: none;
+    }
+
+    
 /* 每日壁纸背景 */
 
 .DailyWallpaper {
@@ -49,6 +58,7 @@
     background-size: cover;
     -o-background-size: cover;
 }
+
 .bar-panel {
     background-image: url("../Frameimage/top_bar.png");
     background-repeat: no-repeat;
@@ -373,5 +383,104 @@
     @keyframes img{
     from {margin-top: 32px;margin-bottom: 32px;}
     to {}
+    }
+    
+
+
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .loadingdiv1{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      text-align: center;
+      width: 100%;
+      z-index: 9999;
+    }
+    .container{
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .wrapper{
+      position: absolute;
+      top: -35px;
+      transform: scale(1.5);
+    }
+    .loader{
+      height: 25px;
+     width: 1px;
+     position: absolute;
+     animation: rotate 3.5s linear infinite;
+    }
+    .loader .dot{
+      top: 30px;
+     height: 7px;
+     width: 7px;
+     background: #4491FF;
+     border-radius: 50%;
+     position: relative;
+    }
+    .text{
+      position: absolute;
+      bottom: -85px;
+      font-size: 25px;
+      font-weight: 400;
+      font-family: 'Poppins',sans-serif;
+      color: #4491FF;
+    }
+    .loadingprogressbar{
+        display: inherit;
+        position: absolute;
+        bottom: -120px;
+    }
+    @keyframes rotate {
+      30%{
+        transform: rotate(220deg);
+      }
+      40%{
+      transform: rotate(450deg);
+        opacity: 1;
+     }
+     75%{
+      transform: rotate(720deg);
+      opacity: 1;
+     }
+     76%{
+      opacity: 0;
+     }
+     100%{
+      opacity: 0;
+      transform: rotate(0deg);
+     }
+    }
+    .loader:nth-child(1){
+      animation-delay: 0.15s;
+    }
+    .loader:nth-child(2){
+      animation-delay: 0.3s;
+    }
+    .loader:nth-child(3){
+      animation-delay: 0.45s;
+    }
+    .loader:nth-child(4){
+      animation-delay: 0.6s;
+    }
+    .loader:nth-child(5){
+      animation-delay: 0.75s;
+    }
+    .loader:nth-child(6){
+      animation-delay: 0.9s;
+    }
+    .loadingpageglass{
+        background: rgba(0, 0, 0, 0.65);
+        backdrop-filter: blur(60px);
     }
     

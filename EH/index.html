@@ -8,17 +8,18 @@
     <meta name="force-rendering" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <link href="../../fonts/fonts.css" rel="stylesheet">
+    <link href="../fonts/fonts.css" rel="stylesheet">
     <!-- MDUI CSS -->
 
-    <link rel="stylesheet" href="../../OverAllCss/mdui.css" />
-    <link rel="stylesheet" href="../../OverAllCss/style.css" />
-    <link rel="stylesheet" href="../../OverAllCss/triangle.css" />
+    <link rel="stylesheet" href="../OverAllCss/mdui.css" />
+    <link rel="stylesheet" href="../OverAllCss/style.css" />
+    <link rel="stylesheet" href="../OverAllCss/triangle.css" />
     <title>夙宸-教程页面</title>
 </head>
 
-<body style="overflow: hidden;">
-    <div class="loadingdiv1 loadingpageglass" style="z-index: 9999;position:fixed;width: 100%;height: 100%;padding: 50px;">
+<body>
+
+    <div class="loadingdiv1 blackglass4" style="z-index: 9999;position:fixed;width: 100%;height: 100%;padding: 50px;">
         <div class="container">
             <div class="wrapper">
                 <div class="loader">
@@ -71,18 +72,13 @@
             <!-- 顶部应用栏右方更多按钮 菜单栏目 -->
             <ul class="mdui-menu" id="aboutmore">
                 <li class="mdui-menu-item">
-                    <a href="index.html" class="mdui-ripple">
+                    <a href="https://suchenawa.github.io/" class="mdui-ripple">
                         <i class="mdui-menu-item-icon mdui-icon material-icons">arrow_back</i>转到首页
-                    </a>
-                </li>
-                <li class="mdui-menu-item">
-                    <a href="javascript:;" class="mdui-ripple">
-                        <i class="mdui-menu-item-icon mdui-icon material-icons">file_download</i>
                     </a>
                 </li>
                 <li class="mdui-divider"></li>
                 <li class="mdui-menu-item">
-                    <a href="PrivacyPolicy.html" class="mdui-ripple">
+                    <a href="https://suchenawa.github.io/PrivacyPolicy.html" class="mdui-ripple">
                         <i class="mdui-menu-item-icon mdui-icon material-icons">cloud_download</i>隐私政策
                     </a>
                 </li>
@@ -200,57 +196,34 @@
         <div style=" width: 100%;padding-top: 65px;"></div>
 
         <!--  内容层 -->
-        <div class="mdui-container " style="min-height: 800px; padding-top: 20px;">
-
+        <div style="height: 800px; padding-top: 20px;">
             <div class="mdui-rows">
-                <div class="mdui-col-xs-12 mdui-col-sm-12 mdui-col-md-6" style="padding-bottom: 18px;">
+                <div
+                    class="mdui-col-lg-6 mdui-col-md-8 mdui-col-xs-10  mdui-col-offset-lg-3 mdui-col-offset-md-2 mdui-col-offset-xs-1">
                     <div class="mdui-card">
                         <div class="mdui-card-media">
                             <img src="https://suchenawa.github.io/BackgroundImage/ymm1.png" />
                             <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
                                 <div class="mdui-card-primary">
-                                    <div class="mdui-card-primary-title title">Igniter APP的使用</div>
-                                    <div class="mdui-card-primary-subtitle">lastupdate:2020/09/07</div>
+                                    <div class="mdui-card-primary-title">GFW区域</div>
+                                    <div class="mdui-card-primary-subtitle">仅供参考</div>
                                 </div>
                             </div>
                         </div>
                         <div class="mdui-card-actions">
-                            <a href="./Data/20210426/index.html">
+                            <a href="./GFW/index.html">
                                 <button class="mdui-btn mdui-ripple mdui-text-color-teal">点击跳转</button>
                             </a>
 
                         </div>
                     </div>
                 </div>
-
-                <div class="mdui-col-xs-12  mdui-col-sm-12 mdui-col-md-6" style="padding-bottom: 18px;">
-                    <div class="mdui-card">
-                        <div class="mdui-card-media">
-                            <img src="https://suchenawa.github.io/BackgroundImage/ymm1.png" />
-                            <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
-                                <div class="mdui-card-primary">
-                                    <div class="mdui-card-primary-title title">Qv2ray的安装与使用</div>
-                                    <div class="mdui-card-primary-subtitle">lastupdate:2020/09/07</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mdui-card-actions">
-                            <a href="./Data/20210506/index.html">
-                                <button class="mdui-btn mdui-ripple mdui-text-color-teal">点击跳转</button>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
-
         </div>
 
-        <div style="width: 100%;padding-top: 10px;height: 30px;"></div>
+<div style="width: 100%;padding-top: 10px;height: 150px;"></div>
         <!-- 网站运行时间 -->
-        <div id="WebsiteRunningTime" class="mdui-container-fluid" style="overflow: hidden;padding-bottom: 20px;">
+        <div id="WebsiteRunningTime" class="mdui-container-fluid" style="overflow: hidden;">
             <div class="mdui-rows">
                 <div
                     class="mdui-col-xl-4 mdui-col-lg-6 mdui-col-md-8 mdui-col-xs-10  mdui-col-offset-xl-4 mdui-col-offset-lg-3 mdui-col-offset-md-2 mdui-col-offset-xs-1">
@@ -368,7 +341,7 @@
 
 
 
-
+        <br>
 
 
         <!-- 网页页脚 -->
@@ -429,7 +402,6 @@
             if (document.readyState == "complete") {
                 $(".loadingdiv1").hide();
                 $('.main-body').css('display', 'block')
-                $('body').css('overflow', 'unset')
             }
         }
     </script>
