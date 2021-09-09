@@ -24,7 +24,7 @@ class Circle {
 }
 
 class Boom {
-  constructor ({ origin, context, circleCount = 10, area }) {
+  constructor ({ origin, context, circleCount = 20, area }) {
     this.origin = origin
     this.context = context
     this.circleCount = circleCount
@@ -116,7 +116,7 @@ class CursorSpecialEffects {
     const style = this.renderCanvas.style
     style.position = 'fixed'
     style.top = style.left = 0
-    style.zIndex = '999999999999999999999999999999999999999999'
+    style.zIndex = '9999'
     style.pointerEvents = 'none'
 
     style.width = this.renderCanvas.width = this.computerCanvas.width = this.globalWidth
