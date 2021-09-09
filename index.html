@@ -18,8 +18,11 @@
 </head>
 
 <body style="overflow: hidden;">
-    <div class="loadingdiv1 loadingpageglass" style="z-index: 9999;position:fixed;width: 100%;height: 100%;padding: 50px;">
-        <div class="container">
+    <div class="loadingdiv1 loadingpageglass" id="loadingpage" style="z-index: 9999;position:fixed;width: 100%;height: 100%;padding: 50px;">
+        <div  id="loadingpagewelcometext" style="display: none;">
+            <h1 class="loadingpagetext">欢迎访问本网站</h1>
+        </div>
+        <div class="container" id="loadingpageprogressbar">
             <div class="wrapper">
                 <div class="loader">
                     <div class="dot"></div>
@@ -549,9 +552,16 @@
     <script>
         document.onreadystatechange = function () {
             if (document.readyState == "complete") {
-                $(".loadingdiv1").hide();
+                // $(".loadingdiv1").hide();
+                $('#loadingpage').removeClass('loadingpageclass')
+                $('#loadingpage').addClass('loadingpageclasslater')
                 $('.main-body').css('display', 'block')
                 $('body').css('overflow', 'unset')
+                $('#loadingpageprogressbar').css('display','none')
+                $('#loadingpagewelcometext').css('display','unset')
+                setTimeout(function(){
+                    $(".loadingdiv1").hide();
+                }, 1000);
             }
         }
     </script>

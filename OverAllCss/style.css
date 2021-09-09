@@ -23,6 +23,23 @@
         backdrop-filter: blur(100px);
         animation: loadingglassanimation 2s  linear ;
     }
+    .loadingpageclasslater{
+        background: rgba(0, 0, 0, 0.0);
+        backdrop-filter: blur(0px);
+        animation: loadingglasslateranimation 1s  linear ;
+    }
+    .loadingpagetext{
+        color: rgba(255, 255, 255, 1);
+        animation: loadingpagetextanimation 1s linear;
+    }
+    @keyframes loadingpagetextanimation{
+        0%{
+            color: rgba(255, 255, 255, 1);
+        }
+        100%{
+            color: rgba(255, 255, 255, 0);
+        }
+    }
     @keyframes loadingglassanimation{
         0%{
             background: rgba(0, 0, 0, 0.65);
@@ -31,6 +48,16 @@
         100%{
             background: rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(100px);
+        }
+    }
+    @keyframes loadingglasslateranimation{
+        0%{
+            background: rgba(0, 0, 0, 0.10);
+        backdrop-filter: blur(100px);
+        }
+        100%{
+            background: rgba(0, 0, 0, 0);
+        backdrop-filter: blur(0px);
         }
     }
 
