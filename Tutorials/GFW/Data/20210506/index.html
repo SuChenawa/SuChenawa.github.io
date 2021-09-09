@@ -17,8 +17,8 @@
     <title>夙宸-教程页面</title>
 </head>
 
-<body>
-    <div class="loadingdiv1 blackglass4" style="z-index: 9999;position:fixed;width: 100%;height: 100%;padding: 50px;">
+<body style="overflow: hidden;">
+    <div class="loadingdiv1 loadingpageglass" style="z-index: 9999;position:fixed;width: 100%;height: 100%;padding: 50px;">
         <div class="container">
             <div class="wrapper">
                 <div class="loader">
@@ -459,6 +459,7 @@
             if (document.readyState == "complete") {
                 $(".loadingdiv1").hide();
                 $('.main-body').css('display', 'block')
+                $('body').css('overflow', 'unset')
             }
         }
     </script>
