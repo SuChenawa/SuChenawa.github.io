@@ -17,6 +17,12 @@
     img{
         -webkit-user-drag: none;
     }
+    
+    .loadingpageglass{
+        background: rgba(0, 0, 0, 0.65);
+        backdrop-filter: blur(60px);
+    }
+
 
     
 /* 每日壁纸背景 */
@@ -155,10 +161,7 @@
 
 
 /* 毛玻璃效果合集 */
-.loadingpageglass{
-    background: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(60px);
-}
+
 
 .glass {
     background: rgba(255, 255, 255, 0.05);
