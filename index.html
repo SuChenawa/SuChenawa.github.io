@@ -111,6 +111,7 @@
                         <h2 style="color: white;text-align: center;">夙宸</h2>
                     </div>
 
+                    <input id="backbuttonstate" type="text" value="0" style="display:none;" />
                 </div>
 
 
@@ -541,7 +542,6 @@
                 </div>
             </div>
 
-
         </div>
     </div>
 
@@ -550,24 +550,38 @@
     <script src="https://suchenawa.github.io/js/init.js"></script>
     <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
 
+
     <script>
         document.onreadystatechange = function () {
             setTimeout(function () {
                 if (document.readyState == "complete") {
-                    // $(".loadingdiv1").hide();
-                    $('#loadingpage').removeClass('loadingpageclass')
                     $('#loadingpage').addClass('loadingpageclasslater')
-                    $('.main-body').css('display', 'block')
-                    $('body').css('overflow', 'unset')
+                    $('#loadingpage').removeClass('loadingpageclass')
                     $('#loadingpageprogressbar').css('display', 'none')
                     $('#loadingpagewelcometext').css('display', 'unset')
                     setTimeout(function () {
+                        $('.main-body').css('display', 'block')
+                        $('body').css('overflow', 'unset')
                         $(".loadingdiv1").hide();
                     }, 1000);
                 }
-            }, 2000);
+            }, 2100);
 
         }
+    </script>
+   
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+       var ibackbutton = document.getElementById("backbuttonstate");
+       if (ibackbutton.value == "0") {
+         // Page has been loaded for the first time - Set marker
+         ibackbutton.value = "1";
+         alert('First time load');
+       } else {
+         // Back button has been fired.. Do Something different..
+         alert('Previously loaded - Returned from Back button');
+       }
+    }, false);
     </script>
 </body>
 
