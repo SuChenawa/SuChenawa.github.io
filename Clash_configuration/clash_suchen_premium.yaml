@@ -399,7 +399,7 @@ rules:
   - MATCH,PROXY
   
   
-  - DOMAIN-SUFFIX,warframe.com,PROXY
+  - DOMAIN-SUFFIX,warframe.com,DIRECT
 
 
 # Clash for Windows
