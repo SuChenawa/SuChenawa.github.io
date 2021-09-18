@@ -397,6 +397,10 @@ rules:
   - GEOIP,,DIRECT
   - GEOIP,CN,DIRECT
   - MATCH,PROXY
+  
+  
+  - DOMAIN-SUFFIX,warframe.com,PROXY
+
 
 # Clash for Windows
 cfw-bypass:
