@@ -400,6 +400,11 @@ rules:
   
   
   - DOMAIN-SUFFIX,warframe.com,DIRECT
+  - DOMAIN,www.warframe.com,DIRECT
+  - DOMAIN,contact.warframe.com,DIRECT
+  - DOMAIN,content.warframe.com,DIRECT
+  - DOMAIN,api.warframe.com,DIRECT
+  - DOMAIN,origin.warframe.com,DIRECT
 
 
 # Clash for Windows
