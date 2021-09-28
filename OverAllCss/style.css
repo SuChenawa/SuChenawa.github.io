@@ -468,7 +468,7 @@
     }
     .Windows8_wrapper{
         position: absolute;
-        top: 100px;
+        top: 80px;
         transform: scale(1.5);
       }
     .loader{
@@ -495,7 +495,7 @@
     }
     .Windows8_text{
         position: absolute;
-        bottom: -200px;
+        bottom: -190px;
         font-size: 25px;
         font-weight: 400;
         font-family: 'Poppins',sans-serif;

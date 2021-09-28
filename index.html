@@ -14,15 +14,14 @@
     <link rel="stylesheet" href="./OverAllCss/mdui.css" />
 
     <link rel="stylesheet" href="./OverAllCss/triangle.css" />
-    <!--引入css文件-->
-    <link rel="stylesheet" type="text/css" href="assets/waifu.css" />
+
     <title>夙宸-主页</title>
 </head>
 
-<body style="overflow: hidden;">
+<body style="overflow: hidden;user-select: none;">
 
     <script src="https://91.90.194.171/api/Live2D"></script>
-    <script>aLive2D('Group(defined,#02)', '180px', '300px', 'Rb', '5%', '0%', true)</script>
+    <script>aLive2D('Group(defined,#02)', '120px', '200px', 'Rb', '5%', '0%', true)</script>
 
     <!--给网站添加鼠标点击爆炸五颜六色特效-->
     <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:5003;pointer-events:none;"></canvas>
@@ -258,7 +257,7 @@
                             <div class="mdui-card-actions">
                                 <button class="mdui-btn mdui-ripple mdui-text-color-teal"
                                     mdui-dialog="{target:'#Tutorials_dialog'}">点击跳转</button>
-                                <div class="mdui-dialog" id="Tutorials_dialog">
+                                <div class="mdui-dialog " id="Tutorials_dialog">
 
                                     <!-- 卡弹出窗口卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
                                     <div class="mdui-card-media">
@@ -280,11 +279,11 @@
                                     <div class="mdui-dialog-actions mdui-dialog-actions-stacked">
                                         <a href="https://suchenawa.github.io/Tutorials/index.html">
                                             <button class="mdui-btn mdui-ripple mdui-text-color-teal"
-                                                style="text-align: center;">进入教程主界面</button>
+                                                style="text-align: center;background-color: transparent;">进入教程主界面</button>
                                         </a>
                                         <a href="https://suchenawa.github.io/Tutorials/GFW/index.html">
                                             <button class="mdui-btn mdui-ripple mdui-text-color-teal"
-                                                style="text-align: center;">进入教程GFW专区</button>
+                                                style="text-align: center;background-color: transparent;">进入教程GFW专区</button>
                                         </a>
                                     </div>
                                 </div>
@@ -405,21 +404,9 @@
                                             <div style="height: 200px;"></div>
                                         </div>
                                         <div class="mdui-dialog-actions" style="background-color: rgb(0, 85, 255);">
-
-                                            <a mdui-dialog="{target:'#ns0'}">
-
-
-                                                <button class="mdui-btn mdui-ripple mdui-text-color-white"
-                                                    style="text-align: center;" mdui-dialog-close>确定
-                                                </button>
-
-
-                                                <div class="mdui-dialog" id="ns0"
-                                                    style="width: 100%;margin: 0;max-width:none;">
-                                                    <div style="background-color: red;">
-                                                        <h2>你是0！！！！！</h2>
-                                                    </div>
-                                                </div>
+                                            <button class="mdui-btn mdui-ripple mdui-text-color-white"
+                                                style="text-align: center;" mdui-dialog-close>确定
+                                            </button>
                                         </div>
                                     </div>
 
@@ -533,29 +520,29 @@
                     <div class="mdui-row">
                         <div class="mdui-col-md-6 mdui-col-xs-12">
                             <div class="mdui-container-fluid" style="padding: 10px;">
-                                <h2 class="mdui-text-color-white" style="margin: 10px;">网站内容提供者</h2>
+                                <h2 class="mdui-text-color-white" style="margin: 10px;user-select: none;">网站内容提供者</h2>
                                 <div class="mdui-row" style="text-align: center;">
                                     <div class="mdui-col-xs-4">
                                         <div class="glass1" style="border-radius: 20px; padding: 10px;">
                                             <img src="./BackgroundImage/header_logo.jpg" width="80px"
-                                                style="border-radius: 50px;">
-                                            <h3>夙宸</h3>
+                                                style="border-radius: 50px;user-select: none;">
+                                            <h3 style="user-select: none;">夙宸</h3>
 
                                         </div>
                                     </div>
                                     <div class="mdui-col-xs-4">
                                         <div class="glass1" style="border-radius: 20px; padding: 10px;">
                                             <img src="./BackgroundImage/header_logo.jpg" width="80px"
-                                                style="border-radius: 50px;">
-                                            <h3>NONE</h3>
+                                                style="border-radius: 50px;user-select: none;">
+                                            <h3 style="user-select: none;">NONE</h3>
 
                                         </div>
                                     </div>
                                     <div class="mdui-col-xs-4">
                                         <div class="glass1" style="border-radius: 20px; padding: 10px;">
                                             <img src="./BackgroundImage/header_logo.jpg" width="80px"
-                                                style="border-radius: 50px;">
-                                            <h3>NONE</h3>
+                                                style="border-radius: 50px;user-select: none;">
+                                            <h3 style="user-select: none;">NONE</h3>
 
                                         </div>
                                     </div>
@@ -568,29 +555,29 @@
                         </div>
                         <div class="mdui-col-md-6 mdui-col-xs-12">
                             <div class="mdui-container-fluid " style="padding: 15px;border-radius: 8px;">
-                                <div class=" mdui-shadow-6" style="padding: 15px;"> 
-                                    <p style="color: white;text-align: center;font-size: 18px;">本网站已运行</p>
+                                <div class=" mdui-shadow-6" style="padding: 15px;">
+                                    <p style="color: white;text-align: center;font-size: 18px;user-select: none;">本网站已运行
+                                    </p>
 
-                                    <div style="text-align: center;font-size: 18px;color: white;"><span
-                                            id="blog_running_days">0</span> days , <span
+                                    <div style="text-align: center;font-size: 18px;color: white;user-select: none;">
+                                        <span id="blog_running_days">0</span> days , <span
                                             id="blog_running_hours">0</span> h , <span id="blog_running_mins">0</span> m
                                         , <span id="blog_running_secs">0</span> s
                                     </div>
                                 </div>
-                               <div>
-                                   <div class="grayglass1" style="height: 100px;text-align: center;">
-                                    <br>
+                                <div>
+                                    <div class="grayglass1" style="height: 100px;text-align: center;">
+                                        <br>
                                         <h1 class="mdui-text-color-white">Another Text</h1>
-                                   </div>
-                               </div>
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
-
                     </div>
                 </div>
                 <div class="blackglass2" style="padding: 20px;">
-                    <h4 style="color: white;text-align: center; bottom: 0;">Copyright © 2019-2021 SuChen</h4>
+                    <h4 style="color: white;text-align: center; bottom: 0;user-select: none;">Copyright © 2019-2021
+                        SuChen</h4>
                 </div>
             </div>
 
@@ -616,14 +603,14 @@
                             class="mdui-icon material-icons">touch_app</i></button>
                 </div>
             </div>
-
         </div>
     </div>
 
 
     <script src="https://suchenawa.github.io/js/mdui.js"></script>
-    <script src="https://suchenawa.github.io/js/init.js"></script>
     <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+    <script src="https://suchenawa.github.io/js/init.js"></script>
+
 
     <!-- 网站运行时间 -->
     <script no-pjax="">
