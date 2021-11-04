@@ -231,7 +231,7 @@ proxy-groups:
     - "ss-v2ray"
     - "v2ray"
     - "SuChen"
-    - "SuChen-trs"
+
 
 # 大陆流媒体面向港澳台限定服务
 - name: "HKMTMedia"
@@ -243,7 +243,7 @@ proxy-groups:
     - "ss-v2ray"
     - "v2ray"
     - "SuChen"
-    - "SuChen-trs"
+
 
 # 规则
 rule-providers:
