@@ -230,6 +230,7 @@ proxy-groups:
     - "ss-obfs"
     - "ss-v2ray"
     - "v2ray"
+    - "SuChen-圣何塞"
     - "SuChen"
 
 
@@ -242,6 +243,7 @@ proxy-groups:
     - "ss-obfs"
     - "ss-v2ray"
     - "v2ray"
+    - "SuChen-圣何塞"
     - "SuChen"
 
 
