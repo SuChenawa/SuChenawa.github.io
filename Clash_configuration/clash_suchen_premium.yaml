@@ -136,20 +136,6 @@ proxies:
   # ws-path: /path
   # ws-headers: #这一行后面不要写东西
   #   Host: v2ray.com # 填你的主机名
-
-
-# Trojan
-- name: "SuChen-trs"
-  type: trojan
-  server: suchen.lfmemz.ltd
-  port: 443
-  password: clashpassword0
-  # udp: true
-  # sni: example.com # aka server name
-  alpn:
-     - h2
-     - http/1.1
-  # skip-cert-verify: true
   
 # Trojan2
 - name: "SuChen"
@@ -187,7 +173,6 @@ proxy-groups:
   proxies:
     - "SuChen-圣何塞"
     - "SuChen"
-    - "SuChen-trs"
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
 
@@ -219,7 +204,6 @@ proxy-groups:
   proxies:
     - "自动选择快速节点"
     - "SuChen-圣何塞"
-    - "SuChen-trs"
     - "SuChen"
 
 
