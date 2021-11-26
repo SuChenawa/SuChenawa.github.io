@@ -163,6 +163,20 @@ proxies:
      - http/1.1
   # skip-cert-verify: true
 
+    # Trojan4
+- name: "SuChen-新加坡"
+  type: trojan
+  server: sg.lfmemz.ltd
+  port: 443
+  password: openwrt
+  # udp: true
+  # sni: example.com # aka server name
+  alpn:
+     - h2
+     - http/1.1
+  # skip-cert-verify: true
+
+
 # 代理组策略
 # 策略组示例请查阅 Clash 项目 README 以使用最新格式：https://github.com/Dreamacro/clash/blob/master/README.md
 proxy-groups:
@@ -172,6 +186,7 @@ proxy-groups:
   type: url-test
   proxies:
     - "SuChen-圣何塞"
+    - "SuChen-新加坡"
     - "SuChen"
   url: 'http://www.gstatic.com/generate_204'
   interval: 300
@@ -204,6 +219,7 @@ proxy-groups:
   proxies:
     - "自动选择快速节点"
     - "SuChen-圣何塞"
+    - "SuChen-新加坡"
     - "SuChen"
 
 
@@ -231,6 +247,7 @@ proxy-groups:
     - "ss-v2ray"
     - "v2ray"
     - "SuChen-圣何塞"
+    - "SuChen-新加坡"
     - "SuChen"
 
 
@@ -244,6 +261,7 @@ proxy-groups:
     - "ss-v2ray"
     - "v2ray"
     - "SuChen-圣何塞"
+    - "SuChen-新加坡"
     - "SuChen"
 
 
