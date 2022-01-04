@@ -232,7 +232,7 @@ proxy-groups:
     - "ss-obfs"
     - "ss-v2ray"
     - "v2ray"
-    - "SuChen-圣何塞"
+    - "SuChen"
     - "SuChen-新加坡-无限流量-慢"
 
 
@@ -245,7 +245,7 @@ proxy-groups:
     - "ss-obfs"
     - "ss-v2ray"
     - "v2ray"
-    - "SuChen-圣何塞"
+    - "SuChen"
     - "SuChen-新加坡-无限流量-慢"
 
 
