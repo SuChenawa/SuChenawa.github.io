@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <link href="./fonts/fonts.css" rel="stylesheet">
+    <!-- MDUI CSS -->
+    <link rel="stylesheet" href="./OverAllCss/style.css" />
+    <link rel="stylesheet" href="./OverAllCss/mdui.css" />
+
+    <link rel="stylesheet" href="./OverAllCss/triangle.css" />
+
+    <title>夙宸-主页</title>
+</head>
+
+<body style="overflow: hidden;user-select: none;">
+
+    <script src="https://91.90.194.171/api/Live2D"></script>
+    <script>aLive2D('Group(defined,#02)', '120px', '200px', 'Rb', '5%', '0%', true)</script>
+
+    <!--给网站添加鼠标点击爆炸五颜六色特效-->
+    <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:5003;pointer-events:none;"></canvas>
+    <script type="text/javascript" src="./js/mouseclick.js"></script>
+
+
+
+    <div class="loadingdiv1 loadingpageglass" id="loadingpage"
+        style="z-index: 9999;position:fixed;width: 100%;height: 100%;padding: 50px;">
+        <div id="loadingpagewelcometext" style="display: none;">
+            <h1 class="loadingpagetext">欢迎访问本网站</h1>
+        </div>
+        <div class="loading_progress_container" id="loadingpageprogressbar">
+            <div class="wrapper">
+                <div class="loader">
+                    <div class="dot"></div>
+                </div>
+                <div class="loader">
+                    <div class="dot"></div>
+                </div>
+                <div class="loader">
+                    <div class="dot"></div>
+                </div>
+                <div class="loader">
+                    <div class="dot"></div>
+                </div>
+                <div class="loader">
+                    <div class="dot"></div>
+                </div>
+                <div class="loader">
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="loading_text">
+                加载中 请稍后
+            </div>
+            <div class="loadingprogressbar" style="width: 100%;">
+                <div class="mdui-progress">
+                    <div class="mdui-progress-indeterminate mdui-color-teal"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- 主体 -->
+    <div class="main-body">
+        <!-- 顶部应用栏 -->
+        <div class="mdui-appbar mdui-appbar-fixed glass4" style="z-index: 5001;">
+            <!-- 使用 mdui-appbar-inset class 以切换应用栏属性 -->
+            <div class="mdui-toolbar mdui-color-theme">
+                <!-- 顶部应用栏左方菜单 -->
+                <button class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: '#left-drawer'}"
+                    mdui-drawer-close style="padding: 0px;width: 40px;"><i
+                        class="mdui-icon material-icons">menu</i></button>
+                <!-- 顶部应用栏左方页面名称 -->
+                <a href="javascript:;" class="mdui-typo-headline">夙宸</a>
+                <!-- 占位符 -->
+                <div class="mdui-toolbar-spacer"></div>
+                <a href="javascript:window.history.back();" class="mdui-btn mdui-btn-icon"><i
+                        class="mdui-icon material-icons">arrow_back</i></a>
+                <a href="javascript:window.location.reload();" class="mdui-btn mdui-btn-icon"><i
+                        class="mdui-icon material-icons">refresh</i></a>
+                <!-- 顶部应用栏右方更多按钮 -->
+                <a href="javascript:;" class="mdui-btn mdui-btn-icon" mdui-menu="{target: '#aboutmore'}"><i
+                        class="mdui-icon material-icons">more_vert</i></a>
+                <!-- 顶部应用栏右方更多按钮 菜单栏目 -->
+                <ul class="mdui-menu" id="aboutmore">
+                    <li class="mdui-menu-item">
+                        <a href="https://suchenawa.github.io/" class="mdui-ripple">
+                            <i class="mdui-menu-item-icon mdui-icon material-icons">arrow_back</i>转到首页
+                        </a>
+                    </li>
+                    <li class="mdui-divider"></li>
+                    <li class="mdui-menu-item">
+                        <a href="https://suchenawa.github.io/PrivacyPolicy.html" class="mdui-ripple">
+                            <i class="mdui-menu-item-icon mdui-icon material-icons">cloud_download</i>隐私政策
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 引入抽屉式导航栏 -->
+        <div class="mdui-drawer mdui-drawer-full-height mdui-drawer-close" style="height: 100%;background-color: white;"
+            id="left-drawer">
+            <div style="padding-top: 58px;">
+                <!-- <button class="mdui-btn" style="width: 100%;background-color: #607D8B ; height: 65px;" mdui-drawer-close><i
+                        class="mdui-icon material-icons">close</i></button> -->
+                <div
+                    style="padding: 20px 20px 1px 20px;background:url(./BackgroundImage/ymm.png); -moz-background-size: cover;-ms-background-size: cover;-webkit-background-size: cover;background-size: cover;-o-background-size: cover;">
+
+                    <div style="width: 100%; text-align: center; ">
+                        <div class="mdui-ripple"
+                            style="border-radius: 50px; width: 80px;text-align: center;margin: 0 auto;">
+                            <img src="./BackgroundImage/header_logo.jpg" width="80px" style="border-radius: 50px;"
+                                draggable="false">
+                        </div>
+                        <h2 style="color: white;text-align: center;">夙宸</h2>
+                    </div>
+                </div>
+
+
+                <div class="mdui-list" mdui-collapse="{accordion: true}" style="margin-bottom: 76px;">
+                    <!-- 抽屉式导航栏内第一个菜单 -->
+                    <div class="mdui-collapse-item mdui-collapse-item-open" id="01">
+                        <!-- 抽屉式导航栏内第一个模块菜单标题栏 -->
+                        <div class="mdui-collapse-item-header  mdui-list-item mdui-ripple">
+                            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">home</i>
+                            <div class="mdui-list-item-content">主页</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                        </div>
+                        <!-- 抽屉式导航栏内第一个模块子菜单 -->
+                        <div class="mdui-collapse-item-body mdui-list ">
+                            <a href="https://suchenawa.github.io/"
+                                class="mdui-list-item mdui-ripple mdui-list-item-active">主页</a>
+                            <a href="index.html#WebsiteRunningTime" class="mdui-list-item mdui-ripple ">网站运行时间</a>
+                        </div>
+                    </div>
+                    <!-- 分割线 -->
+                    <!-- <li class="mdui-divider mdui-m-y-0"></li> -->
+
+                    <!-- 抽屉式导航栏内第二个菜单 -->
+                    <div class="mdui-collapse-item ">
+                        <!-- 抽屉式导航栏内第二个模块菜单标题栏 -->
+                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                            <i
+                                class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red">developer_mode</i>
+                            <div class="mdui-list-item-content">博客</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                        </div>
+                        <!-- 抽屉式导航栏内第二个模块子菜单 -->
+                        <div class="mdui-collapse-item-body mdui-list">
+                            <a href="https://www.lfmemz.ltd/" class="mdui-list-item mdui-ripple ">博客主页</a>
+                            <a href="https://www.lfmemz.ltd/index.php/%e5%85%b3%e4%ba%8e%e5%a4%99%e5%ae%b8/"
+                                class="mdui-list-item mdui-ripple ">关于夙宸</a>
+                            <a href="https://www.lfmemz.ltd/index.php/%e9%9a%90%e7%a7%81%e6%94%bf%e7%ad%96/"
+                                class="mdui-list-item mdui-ripple ">博客隐私政策</a>
+                        </div>
+                    </div>
+                    <!-- 分割线 -->
+                    <!-- <li class="mdui-divider mdui-m-y-0"></li> -->
+
+                    <!-- 抽屉式导航栏内第三个菜单 -->
+                    <div class="mdui-collapse-item">
+                        <!-- 抽屉式导航栏内第三个模块菜单标题栏 -->
+                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">book</i>
+                            <div class="mdui-list-item-content">教程页面</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                        </div>
+                        <!-- 抽屉式导航栏内第三个模块子菜单 -->
+                        <div class="mdui-collapse-item-body mdui-list">
+                            <a href="https://suchenawa.github.io/Tutorials/index.html"
+                                class="mdui-list-item mdui-ripple ">教程页首页</a>
+                            <a href="https://suchenawa.github.io/Tutorials/GFW/index.html"
+                                class="mdui-list-item mdui-ripple ">GFW区域</a>
+                        </div>
+                    </div>
+                    <!-- 分割线 -->
+                    <!-- <li class="mdui-divider mdui-m-y-0"></li> -->
+
+                    <!-- 抽屉式导航栏内第四个菜单 -->
+                    <div class="mdui-collapse-item ">
+                        <!-- 抽屉式导航栏内第四个模块菜单标题栏 -->
+                        <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                            <i
+                                class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-yellow">more_horiz</i>
+                            <div class="mdui-list-item-content">更多</div>
+                            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                        </div>
+                        <!-- 抽屉式导航栏内第四个模块子菜单 -->
+                        <div class="mdui-collapse-item-body mdui-list">
+                            <a href="" class="mdui-list-item mdui-ripple ">NoData</a>
+                            <a href="" class="mdui-list-item mdui-ripple ">NoData</a>
+                        </div>
+                    </div>
+                    <!-- 分割线 -->
+                    <li class="mdui-divider mdui-m-y-0"></li>
+                    <div class="mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">error</i>
+                        <div class="mdui-list-item-content">关于</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 背景图片占位元素 -->
+        <!-- <div class="SuChenWallpaper" style="width: 100%; height: 100%; position: fixed;z-index: -1;"></div> -->
+        <!-- 占位元素 顶部65px -->
+
+        <!-- 背景层 勿删 -->
+        <div class="SuChenWallpaper">
+            <div style=" width: 100%;padding-top: 65px;"></div>
+
+            <!--  内容层 -->
+            <div class="mdui-container " style="min-height: 800px; padding-top: 20px;">
+
+                <div class="mdui-rows">
+                    <!-- 第一个卡片 -->
+                    <div class="mdui-col-xs-12 mdui-col-sm-12 mdui-col-md-6" style="padding-bottom: 18px;">
+                        <div class="mdui-card">
+
+                            <!-- 卡片头部，包含头像、标题、副标题 -->
+                            <div class="mdui-card-header">
+                                <img class="mdui-card-header-avatar"
+                                    src="https://suchenawa.github.io/BackgroundImage/header_logo.jpg" />
+                                <div class="mdui-card-header-title">夙宸</div>
+                                <div class="mdui-card-header-subtitle">撰写自2020/09/08</div>
+                            </div>
+
+                            <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+                            <div class="mdui-card-media">
+                                <img src="https://suchenawa.github.io/BackgroundImage/suchen_ymm_1.jpg" />
+                                <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                    <!-- 卡片的标题和副标题 -->
+                                    <div class="mdui-card-primary">
+                                        <div class="mdui-card-primary-title title">教程页面</div>
+                                        <div class="mdui-card-primary-subtitle">存放各式教程</div>
+                                    </div>
+                                </div>
+
+                                <!-- 卡片中可以包含一个或多个菜单按钮 -->
+                                <div class="mdui-card-menu">
+                                    <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i
+                                        class="mdui-icon material-icons">share</i></button> -->
+                                </div>
+                            </div>
+
+                            <!-- 弹出窗口内容 -->
+                            <div class="mdui-card-actions">
+                                <button class="mdui-btn mdui-ripple mdui-text-color-teal"
+                                    mdui-dialog="{target:'#Tutorials_dialog'}">点击跳转</button>
+                                <div class="mdui-dialog " id="Tutorials_dialog">
+
+                                    <!-- 卡弹出窗口卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+                                    <div class="mdui-card-media">
+                                        <img src="https://suchenawa.github.io/BackgroundImage/ymm1.png" />
+                                        <div
+                                            class="mdui-card-media-covered mdui-card-media-covered-gradient mdui-card-media-covered-top">
+                                            <!-- 卡片的标题和副标题 -->
+                                            <div class="mdui-card-primary">
+                                                <div class="mdui-card-primary-title title">请选择进入站点</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 卡片中可以包含一个或多个菜单按钮 -->
+                                        <div class="mdui-card-menu">
+                                            <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i
+                                                class="mdui-icon material-icons">share</i></button> -->
+                                        </div>
+                                    </div>
+                                    <div class="mdui-dialog-actions mdui-dialog-actions-stacked">
+                                        <a href="https://suchenawa.github.io/Tutorials/index.html">
+                                            <button class="mdui-btn mdui-ripple mdui-text-color-teal"
+                                                style="text-align: center;background-color: transparent;">进入教程主界面</button>
+                                        </a>
+                                        <a href="https://suchenawa.github.io/Tutorials/GFW/index.html">
+                                            <button class="mdui-btn mdui-ripple mdui-text-color-teal"
+                                                style="text-align: center;background-color: transparent;">进入教程GFW专区</button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 弹出窗口内容结束 -->
+                        </div>
+                    </div>
+                    <!-- 第一个卡片结束 -->
+
+
+                    <!-- 第二个卡片 -->
+                    <div class="mdui-col-xs-12  mdui-col-sm-12 mdui-col-md-6" style="padding-bottom: 18px;">
+                        <div class="mdui-card">
+
+                            <!-- 卡片头部，包含头像、标题、副标题 -->
+                            <div class="mdui-card-header">
+                                <img class="mdui-card-header-avatar"
+                                    src="https://suchenawa.github.io/BackgroundImage/header_logo.jpg" />
+                                <div class="mdui-card-header-title">夙宸</div>
+                                <div class="mdui-card-header-subtitle">撰写自2020/09/08</div>
+                            </div>
+
+                            <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+                            <div class="mdui-card-media">
+                                <img src="https://suchenawa.github.io/BackgroundImage/suchen_ymm_1.jpg" />
+                                <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                    <!-- 卡片的标题和副标题 -->
+                                    <div class="mdui-card-primary">
+                                        <div class="mdui-card-primary-title title">我的博客</div>
+                                        <div class="mdui-card-primary-subtitle">暂时无用途</div>
+                                    </div>
+                                </div>
+
+                                <!-- 卡片中可以包含一个或多个菜单按钮 -->
+                                <div class="mdui-card-menu">
+                                    <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i
+                                                        class="mdui-icon material-icons">share</i></button> -->
+                                </div>
+                            </div>
+
+
+                            <!-- 卡片的内容 -->
+
+                            <!-- 卡片的按钮 -->
+                            <div class="mdui-card-actions">
+                                <button class="mdui-btn mdui-ripple mdui-text-color-teal">点击跳转</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 第二个卡片结束 -->
+
+
+                    <!-- 第三个卡片 -->
+                    <div class="mdui-col-xs-12  mdui-col-sm-12 mdui-col-md-12" style="padding-bottom: 18px;">
+                        <div class="mdui-card">
+
+                            <!-- 卡片头部，包含头像、标题、副标题 -->
+                            <!-- <div class="mdui-card-header">
+                                <img class="mdui-card-header-avatar"
+                                    src="https://suchenawa.github.io/BackgroundImage/header_logo.jpg" />
+                                <div class="mdui-card-header-title">夙宸</div>
+                                <div class="mdui-card-header-subtitle">撰写自2020/09/08</div>
+                            </div> -->
+
+                            <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+                            <div class="mdui-card-media">
+                                <img src="https://suchenawa.github.io/BackgroundImage/ymm1.jpg" />
+                                <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                    <!-- 卡片的标题和副标题 -->
+                                    <div class="mdui-card-primary">
+                                        <div class="mdui-card-primary-title title">想啥写啥</div>
+                                        <div class="mdui-card-primary-subtitle">瞎写</div>
+                                    </div>
+                                </div>
+
+                                <!-- 卡片中可以包含一个或多个菜单按钮 -->
+                                <div class="mdui-card-menu">
+                                    <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i
+                                                        class="mdui-icon material-icons">share</i></button> -->
+                                </div>
+                            </div>
+                            <!-- 卡片的内容 -->
+
+                            <!-- 卡片的按钮 -->
+                            <div class="mdui-card-actions">
+                                <button class="mdui-btn mdui-ripple mdui-text-color-teal"
+                                    mdui-dialog="{target:'#Windows8_message_dialog'}">类Windows8弹窗</button>
+                                <div class="mdui-dialog" id="Windows8_message_dialog"
+                                    style="width: 100%;margin: 0;max-width:none;">
+                                    <div style="width: 100%;">
+                                        <!-- 卡弹出窗口卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+                                        <div style="background-color: rgb(0, 85, 255);">
+                                            <div class="loading_progress_container" id="loadingpageprogressbar">
+                                                <div class="Windows8_wrapper">
+                                                    <div class="loader">
+                                                        <div class="dot"></div>
+                                                    </div>
+                                                    <div class="loader">
+                                                        <div class="dot"></div>
+                                                    </div>
+                                                    <div class="loader">
+                                                        <div class="dot"></div>
+                                                    </div>
+                                                    <div class="loader">
+                                                        <div class="dot"></div>
+                                                    </div>
+                                                    <div class="loader">
+                                                        <div class="dot"></div>
+                                                    </div>
+                                                    <div class="loader">
+                                                        <div class="dot"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="Windows8_text">
+                                                    加载中 请稍后
+                                                </div>
+                                            </div>
+                                            <div style="height: 200px;"></div>
+                                        </div>
+                                        <div class="mdui-dialog-actions" style="background-color: rgb(0, 85, 255);">
+                                            <button class="mdui-btn mdui-ripple mdui-text-color-white"
+                                                style="text-align: center;" mdui-dialog-close>确定
+                                            </button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- 弹出窗口内容结束 -->
+                        </div>
+                    </div>
+                    <!-- 第三个卡片结束 -->
+
+
+
+
+                    <!-- 第四个卡片 -->
+                    <div class="mdui-col-xs-12  mdui-col-sm-12 mdui-col-md-12" style="padding-bottom: 18px; display: none;">
+                        <div class="mdui-card">
+
+                            <!-- 卡片头部，包含头像、标题、副标题 -->
+                            <!-- <div class="mdui-card-header">
+                                    <img class="mdui-card-header-avatar"
+                                        src="https://suchenawa.github.io/BackgroundImage/header_logo.jpg" />
+                                    <div class="mdui-card-header-title">夙宸</div>
+                                    <div class="mdui-card-header-subtitle">撰写自2020/09/08</div>
+                                </div> -->
+
+                            <!-- 卡片的媒体内容，可以包含图片、视频等媒体内容，以及标题、副标题 -->
+                            <div class="mdui-card-media">
+                                <img src="https://suchenawa.github.io/BackgroundImage/ymm1.jpg" />
+                                <div class="mdui-card-media-covered mdui-card-media-covered-gradient">
+                                    <!-- 卡片的标题和副标题 -->
+                                    <div class="mdui-card-primary">
+                                        <div class="mdui-card-primary-title title">本子推荐</div>
+                                        <div class="mdui-card-primary-subtitle">资源引用地址均为E-hentai，网站建设中，可能出现页面显示问题</div>
+                                    </div>
+                                </div>
+
+                                <!-- 卡片中可以包含一个或多个菜单按钮 -->
+                                <div class="mdui-card-menu">
+                                    <!-- <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i
+                                                                            class="mdui-icon material-icons">share</i></button> -->
+                                </div>
+                            </div>
+                            <!-- 卡片的内容 -->
+
+                            <!-- 卡片的按钮 -->
+                            <div class="mdui-card-actions">
+                                <a href="https://suchenawa.github.io/EH/index.html">
+                                    <button class="mdui-btn mdui-ripple mdui-text-color-teal">点击跳转</button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                   <!-- 第四个卡片结束 -->
+
+
+                </div>
+
+            </div>
+
+            <div style="width: 100%;padding-top: 10px;height: 30px;"></div>
+
+
+            <!-- 网站运行时间 -->
+            <!-- <div id="WebsiteRunningTime" class="mdui-container-fluid" style="overflow: hidden;">
+                <div class="mdui-rows">
+                    <div
+                        class="mdui-col-xl-4 mdui-col-lg-6 mdui-col-md-8 mdui-col-xs-10  mdui-col-offset-xl-4 mdui-col-offset-lg-3 mdui-col-offset-md-2 mdui-col-offset-xs-1">
+
+                        <div class="blackglass2 mdui-hoverable " style=" width: 100%;border-radius: 8px;">
+                            <div class="mdui-container-fluid mdui-shadow-6 " style="padding: 15px;border-radius: 8px;">
+                                <div class="mdui-row">
+                                    <div class="mdui-col-md-6 mdui-col-xs-10 mdui-col-offset-md-3 mdui-col-offset-xs-1">
+                                        <div>
+                                            <p style="color: white;text-align: center;font-size: 18px;">本网站已运行</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="mdui-col-md-6 mdui-col-xs-10 mdui-col-offset-md-3 mdui-col-offset-xs-1">
+                                        <div>
+                                            <div style="text-align: center;font-size: 18px;color: white;"><span
+                                                    id="blog_running_days">0</span> days , <span
+                                                    id="blog_running_hours">0</span> h , <span
+                                                    id="blog_running_mins">0</span> m
+                                                , <span id="blog_running_secs">0</span> s</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                         
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div> -->
+
+
+
+
+            <br>
+
+
+            <!-- 网页页脚 -->
+            <div class="blackglass2" style=" width: 100%;">
+
+                <div class="mdui-container-fluid" style="padding: 10px;">
+                    <div class="mdui-row">
+                        <div class="mdui-col-md-6 mdui-col-xs-12">
+                            <div class="mdui-container-fluid" style="padding: 10px;">
+                                <h2 class="mdui-text-color-white" style="margin: 10px;user-select: none;">网站内容提供者</h2>
+                                <div class="mdui-row" style="text-align: center;">
+                                    <div class="mdui-col-xs-4">
+                                        <div class="glass1" style="border-radius: 20px; padding: 10px;">
+                                            <img src="./BackgroundImage/header_logo.jpg" width="80px"
+                                                style="border-radius: 50px;user-select: none;">
+                                            <h3 style="user-select: none;">夙宸</h3>
+
+                                        </div>
+                                    </div>
+                                    <div class="mdui-col-xs-4">
+                                        <div class="glass1" style="border-radius: 20px; padding: 10px;">
+                                            <img src="./BackgroundImage/header_logo.jpg" width="80px"
+                                                style="border-radius: 50px;user-select: none;">
+                                            <h3 style="user-select: none;"></h3>
+
+                                        </div>
+                                    </div>
+                                    <div class="mdui-col-xs-4">
+                                        <div class="glass1" style="border-radius: 20px; padding: 10px;">
+                                            <img src="./BackgroundImage/header_logo.jpg" width="80px"
+                                                style="border-radius: 50px;user-select: none;">
+                                            <h3 style="user-select: none;"></h3>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="mdui-col-md-6 mdui-col-xs-12">
+                            <div class="mdui-container-fluid " style="padding: 15px;border-radius: 8px;">
+                                <div class=" mdui-shadow-6" style="padding: 15px;">
+                                    <p style="color: white;text-align: center;font-size: 18px;user-select: none;">本网站已运行
+                                    </p>
+
+                                    <div style="text-align: center;font-size: 18px;color: white;user-select: none;">
+                                        <span id="blog_running_days">0</span> days , <span
+                                            id="blog_running_hours">0</span> h , <span id="blog_running_mins">0</span> m
+                                        , <span id="blog_running_secs">0</span> s
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="grayglass1" style="height: 100px;text-align: center;">
+                                        <br>
+                                        <h1 class="mdui-text-color-white"></h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="blackglass2" style="padding: 20px;">
+                    <h4 style="color: white;text-align: center; bottom: 0;user-select: none;">Copyright © 2019-2022
+                        SuChen</h4>
+                </div>
+            </div>
+
+
+            <!-- 右下角悬浮菜单 -->
+            <div class="mdui-fab-wrapper" id="exampleFab">
+                <button class="mdui-fab mdui-ripple mdui-color-theme-accent">
+                    <!-- 默认显示的图标 -->
+                    <i class="mdui-icon material-icons">add</i>
+
+                    <!-- 在拨号菜单开始打开时，平滑切换到该图标，若不需要切换图标，则可以省略该元素 -->
+                    <i class="mdui-icon mdui-fab-opened material-icons">add</i>
+                </button>
+                <!-- 悬浮菜单内容 -->
+                <div class="mdui-fab-dial">
+                    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-pink"><i
+                            class="mdui-icon material-icons">backup</i></button>
+                    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-red"><i
+                            class="mdui-icon material-icons">bookmark</i></button>
+                    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-orange"><i
+                            class="mdui-icon material-icons">access_alarms</i></button>
+                    <button class="mdui-fab mdui-fab-mini mdui-ripple mdui-color-blue"><i
+                            class="mdui-icon material-icons">touch_app</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://suchenawa.github.io/js/mdui.js"></script>
+    <script src="https://upcdn.b0.upaiyun.com/libs/jquery/jquery-2.0.2.min.js"></script>
+    <script src="https://suchenawa.github.io/js/init.js"></script>
+
+
+    <!-- 网站运行时间 -->
+    <script no-pjax="">
+        var blog_running_days = document.getElementById("blog_running_days");
+        var blog_running_hours = document.getElementById("blog_running_hours");
+        var blog_running_mins = document.getElementById("blog_running_mins");
+        var blog_running_secs = document.getElementById("blog_running_secs");
+        function refresh_blog_running_time() {
+            var time = new Date() - new Date(2019, 2, 7, 8, 0, 0);
+            var d = parseInt(time / 24 / 60 / 60 / 1000);
+            var h = parseInt(time % (24 * 60 * 60 * 1000) / 60 / 60 / 1000);
+            var m = parseInt(time % (60 * 60 * 1000) / 60 / 1000);
+            var s = parseInt(time % (60 * 1000) / 1000);
+            blog_running_days.innerHTML = d;
+            blog_running_hours.innerHTML = h;
+            blog_running_mins.innerHTML = m;
+            blog_running_secs.innerHTML = s;
+        }
+        refresh_blog_running_time();
+        if (typeof (bottomTimeIntervalHasSet) == "undefined") {
+            var bottomTimeIntervalHasSet = true;
+            setInterval(function () { refresh_blog_running_time(); }, 500);
+        }
+    </script>
+
+    <!-- 加载动画 -->
+    <script>
+        document.onreadystatechange = function () {
+            setTimeout(function () {
+                if (document.readyState == "complete") {
+                    $('#loadingpage').addClass('loadingpageclasslater')
+                    $('#loadingpage').removeClass('loadingpageclass')
+                    $('#loadingpageprogressbar').css('display', 'none')
+                    $('#loadingpagewelcometext').css('display', 'unset')
+                    setTimeout(function () {
+                        $('.main-body').css('display', 'block')
+                        $('body').css('overflow', 'unset')
+                        $(".loadingdiv1").hide();
+                    }, 1000);
+                }
+            }, 2100);
+
+        }
+    </script>
+
+</body>
+
+</html>
