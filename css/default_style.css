@@ -1,0 +1,134 @@
+/* 
+www.suchenawa.com
+=============================================================
+ */
+
+body {
+    overflow: hidden;
+    user-select: none;
+    padding: 0px;
+    margin: 0;
+}
+
+img{
+    -webkit-user-drag: none;
+}
+
+
+/* 
+ Topbar css
+ =============================================================
+  */
+
+
+.appbar-container {
+    width: 100%;
+    height: 50px;
+    background-color: red;
+    display: flex;
+
+}
+
+.appbar-menu {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+.appbar-center-container {
+    width: auto;
+    text-align: center;
+    line-height: 50px;
+    flex: 1;
+}
+
+.appbar-center-container h2 {
+    margin: 0;
+}
+
+.appbar-undefined {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+
+}
+
+
+
+/* 
+ Under Development css
+ =============================================================
+  */
+.float-bar {
+    bottom: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+.float-bar-container {
+
+    height: 80px;
+   width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgb(71, 138, 255);
+
+
+
+
+}
+.float-bar-data-settings{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    padding: 10px;
+}
+.float-bar-data-settings a i{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+.float-bar-data-settings a i:hover{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 8px;
+    background-color: rgb(71, 163, 255);
+    backdrop-filter: blur(0px);
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    cursor: pointer;
+}
+
+/* 
+ Under Development css
+ =============================================================
+  */
+.center_container {
+    height: 100%;
+    width: 100%;
+}
+
+.UnderDeveloped {
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.UnderDeveloped i {
+    font-size: 100px;
+}
+
+.UnderDeveloped span {
+    line-height: 100px;
+}

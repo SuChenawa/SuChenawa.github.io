@@ -5,36 +5,32 @@
  -->
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="renderer" content="webkit" />
     <meta name="force-rendering" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <link href="./fonts/fonts.css" rel="stylesheet">
+    <link href="./css/default_style.css" rel="stylesheet">
     <title>SuChen</title>
 </head>
 <style>
-    .center_container{
-       height: 100%;
-       width: 100%;
-    }
-    .UnderDeveloped{
-        margin: 0 auto;
-        width: 300px;
-        padding: 50px;
-        text-align: center;
-    }
-    .UnderDeveloped i{
-        font-size: 100px;
-    }  
-    .UnderDeveloped span{
-        line-height: 100px;
-    }
+  
 </style>
 <body>
     <div>
-        <div name="topbar">
-
-        </div>
+        <!-- <div class="topbar" name="topbar">
+            <div class="appbar-container">
+                <div class="appbar-menu">
+                    <i></i>
+                </div>
+                <div class="appbar-center-container">
+                    <h2>SuChen</h2>
+                </div>
+                <div class="appbar-undefined">
+                    
+                </div>
+            </div>
+        </div> -->
         <div name="center_container" class="center_container">
             <div class="UnderDeveloped">
                 <i class="mdui-menu-item-icon mdui-icon material-icons">settings</i>
@@ -45,5 +41,22 @@
 
         </div>
     </div>
+    <!-- 
+       =============================================================
+    -->
+    <div class="float-bar">
+        <div class="float-bar-container">
+            <div class="float-bar-data-settings">
+                <a><i class="material-icons">settings</i></a>
+            </div>
+            <div class="float-bar-data-settings">
+                <a><i class="material-icons">home</i></a>
+            </div>
+            <div class="float-bar-data-settings">
+                <a><i class="material-icons">search</i></a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

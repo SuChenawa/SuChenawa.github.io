@@ -1,4 +1,4 @@
-## SuChenawa.github.io  
+## www.suchenawa.com  
 ---
 该网站完全由html+css+js开发  
 由Github-Page驱动  
