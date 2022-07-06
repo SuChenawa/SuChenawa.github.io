@@ -8,12 +8,20 @@ body {
     user-select: none;
     padding: 0px;
     margin: 0;
+    height: 100%;
 }
 
-img{
+img {
     -webkit-user-drag: none;
 }
 
+*{
+    transition: .25s;
+    transition-property: all;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
 
 /* 
  Topbar css
@@ -68,46 +76,39 @@ img{
 .float-bar-container {
 
     height: 80px;
-   width: fit-content;
+    width: fit-content;
     margin: 0 auto;
     display: flex;
     text-align: center;
     border-radius: 12px;
     background-color: rgb(71, 138, 255);
-
-
-
-
 }
-.float-bar-data-settings{
+
+.float-bar-data-settings {
     width: 60px;
     height: 60px;
     line-height: 60px;
     padding: 10px;
 }
-.float-bar-data-settings a i{
+
+.float-bar-data-settings a i {
     width: 60px;
     height: 60px;
     line-height: 60px;
-    transition: .25s;
-    transition-property: all;
-    transition-duration: 0.25s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
 }
-.float-bar-data-settings a i:hover{
+
+.float-bar-data-settings a i:hover {
     width: 60px;
     height: 60px;
     line-height: 60px;
     border-radius: 8px;
     background-color: rgb(71, 163, 255);
     backdrop-filter: blur(0px);
-    transition: .25s;
-    transition-property: all;
-    transition-duration: 0.25s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
     cursor: pointer;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+
 }
 
 /* 
@@ -117,6 +118,7 @@ img{
 .center_container {
     height: 100%;
     width: 100%;
+    padding-top: 50px;
 }
 
 .UnderDeveloped {
@@ -132,3 +134,67 @@ img{
 .UnderDeveloped span {
     line-height: 100px;
 }
+
+/* 
+ Button Style css
+ =============================================================
+  */
+.btn {
+    color: rgb(242, 242, 242);
+    font-weight: 600;
+    border: none;
+    min-width: 80px;
+    padding: 12px 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+
+}
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.52);
+}
+
+.btn-raised {
+    background-color: darkgreen;
+
+
+}
+
+/* 
+Images css
+ =============================================================
+  */
+  .user-logo{
+    border-radius: 50%;
+
+  }
+
+
+
+
+  .card-container{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+    display: flex;
+    padding: 16px;
+    border-radius: 12px;
+    border: 3px rgb(192, 216, 240) solid;
+    background-color:rgb(204, 229, 253) ;
+
+  }
+  .card-container:hover{
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 8px 8px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  .user-card-logo-container{
+    width: 60px;
+    height: 60px;
+  }
