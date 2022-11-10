@@ -1,6 +1,6 @@
 /*!
- * mdui 1.0.1 (https://mdui.org)
- * Copyright 2016-2020 zdhxiong
+ * mdui 1.0.2 (https://mdui.org)
+ * Copyright 2016-2021 zdhxiong
  * Licensed under MIT
  */
 (function (global, factory) {
@@ -2717,7 +2717,7 @@
 
   var $document = $(document);
   var $window = $(window);
-  var $body = $('body');
+  $('body');
 
   var DEFAULT_OPTIONS = {
       tolerance: 5,
@@ -4429,7 +4429,7 @@
       else {
           this.$tabs.each(function (i, tab) {
               if (tab.id === index) {
-                  this$1.activeIndex === i;
+                  this$1.activeIndex = i;
                   return false;
               }
           });

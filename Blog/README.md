@@ -1,7 +1,7 @@
 ## www.suchenawa.com
 ---
 博客部分  
-使用Hexo
+使用Flutter
 
 ## 进度  
 0%  

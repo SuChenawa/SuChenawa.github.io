@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="zh-cmn-Hans">
 <!-- 
-    Some Text
+    SuChen Web
  -->
 
 <head>
@@ -10,8 +10,11 @@
     <meta name="renderer" content="webkit" />
     <meta name="force-rendering" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link href="./fonts/fonts.css" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="css/mdui.css" media="screen,projection" />
     <link href="./css/default_style.css" rel="stylesheet">
+    <link href="./fonts/fonts.css" rel="stylesheet">
+
     <title>SuChen</title>
 </head>
 <style>
@@ -42,14 +45,29 @@
                 </div>
                 <h3 style="flex:1;">欢迎来到中转站</h3>
             </div>
-            <br>
+            <!-- <br>
+            <div class="card-container">
+                <div class="href-item">
+                    <div class="href-item-img">
+
+                    </div>
+                </div>
+                
+                <div class="href-item">
+                    <div class="href-item-img">
+
+                    </div>
+                </div>
+            </div>
+             -->
+             <br>
             <div class="card-container">
                 <div class="UnderDeveloped">
-                    <i class="mdui-menu-item-icon mdui-icon material-icons">settings</i>
+                    <i class="mdui-menu-item-icon mdui-icon material-icons" style="width: 100px;">settings</i>
                     <h2>UnderDeveloped</h2>
-                    <button class="btn btn-raised">
+                    <!-- <button class="btn btn-raised mdui-ripple mdui-ripple-green">
                         Test Button
-                    </button>
+                    </button> -->
                 </div>
             </div>
 
@@ -66,17 +84,18 @@
     <div class="float-bar">
         <div class="float-bar-container">
             <div class="float-bar-data-settings">
-                <a><i class="material-icons">settings</i></a>
+                <a><i class="material-icons mdui-ripple">settings</i></a>
             </div>
             <div class="float-bar-data-settings">
-                <a><i class="material-icons">home</i></a>
+                <a><i class="material-icons mdui-ripple">home</i></a>
             </div>
             <div class="float-bar-data-settings">
-                <a><i class="material-icons">search</i></a>
+                <a><i class="material-icons mdui-ripple">search</i></a>
             </div>
         </div>
     </div>
 
+    <script type="text/javascript" src="js/mdui.js"></script>
 </body>
 
 </html>
