@@ -1,247 +1,102 @@
-/* 
-www.suchenawa.com
-=============================================================
- */
-
- /* 每日壁纸背景 */
-
-.DailyWallpaper {
-    width: 100%;
-    height: 100%;
-    background: url(https://api.sunweihu.com/api/bing1/api.php) no-repeat center center fixed;
-    position: fixed;
-    z-index:-1;
-    -moz-background-size: cover;
-    /*背景图片拉伸以铺满全屏*/
-    -ms-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-body {
-    overflow: hidden;
-    user-select: none;
-    padding: 0px;
-    margin: 0;
-    height: 100%;
-}
-
-img {
-    -webkit-user-drag: none;
-}
-
-* {
+.transition{
     transition: .25s;
     transition-property: all;
     transition-duration: 0.25s;
     transition-timing-function: ease;
     transition-delay: 0s;
 }
-
-/* 
- Topbar css
- =============================================================
-  */
-
-
-.appbar-container {
-    width: 100%;
-    height: 50px;
-    background-color: red;
-    display: flex;
-
-}
-
-.appbar-menu {
-    width: 50px;
-    height: 50px;
-    background-color: blue;
-}
-
-.appbar-center-container {
-    width: auto;
-    text-align: center;
-    line-height: 50px;
-    flex: 1;
-}
-
-.appbar-center-container h2 {
-    margin: 0;
-}
-
-.appbar-undefined {
-    width: 50px;
-    height: 50px;
-    background-color: yellow;
-
-}
-
-
-
-/* 
- Under Development css
- =============================================================
-  */
-.float-bar {
-    bottom: 20px;
-    position: fixed;
-    width: 100%;
-}
-
-.float-bar-container {
-    height: 80px;
-    width: fit-content;
+.link-card-view{
     margin: 0 auto;
-    display: flex;
-    text-align: center;
-    border-radius: 50px;
-    background-color: rgb(71, 138, 255);
+    width: 240px;
+    min-width: 240px;
+    max-width: 480px;
+    background-color: aliceblue;
+    padding: 16px;
+    color: black;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
 }
-
-.float-bar-data-settings {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    padding: 10px;
+.link-card-view .caedlink{
+    text-decoration: none;
 }
-
-.float-bar-data-settings a i {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+.link-card-view .title .toptitle h2{
+    margin: 10px 0px;
 }
-
-.float-bar-data-settings a i:hover {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50px;
-    background-color: rgb(71, 163, 255);
+.link-card-view .content{
+    color: rgb(201, 201, 201);
+}
+.link-card-view:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(0px);
     cursor: pointer;
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-
 }
 
-/* 
- Under Development css
- =============================================================
-  */
-.center_container {
-    height: 100%;
+.none-a-style{
+    text-decoration: none;
+}
+
+.fix-bottom-bar{
     width: 100%;
-    padding-top: 50px;
-}
-
-.UnderDeveloped {
-    margin: 0 auto;
-    padding: 50px;
-    text-align: center;
-}
-
-.UnderDeveloped i {
-    font-size: 100px;
-}
-
-.UnderDeveloped span {
-    line-height: 100px;
-}
-
-/* 
- Button Style css
- =============================================================
-  */
-.btn {
-    color: rgb(242, 242, 242);
-    font-weight: 600;
-    border: none;
-    min-width: 80px;
-    padding: 12px 16px;
-    border-radius: 2px;
-    cursor: pointer;
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
-
-}
-
-.btn:hover {
-    cursor: pointer;
-    background-color: rgb(0, 138, 0);
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-        0px 5px 8px 0px rgba(0, 0, 0, 0.52);
-}
-
-.btn-raised {
-    background-color: darkgreen;
-
-
-}
-
-/* 
-Images css
- =============================================================
-  */
-.user-logo {
-    border-radius: 50%;
-
-}
-
-
-
-
-.card-container {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 80%;
+    height: 50px;
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
     display: flex;
-    padding: 16px;
-    border-radius: 4px;
-    border: 3px rgb(192, 216, 240) solid;
-    background-color: rgba(109, 109, 109, 0.2);
-
 }
-
-.card-container:hover {
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2),
-        0px 2px 2px 0px rgba(0, 0, 0, 0.14),
-        0px 8px 8px 2px rgba(0, 0, 0, 0.12);
-
-    /* box-shadow: 0 0 #0000,
-     0 0 #0000,
-     inset 0 2px 4px 0 rgba(0, 0, 0, 6%); */
-
-    /* box-shadow:0 4px 6px -1px rgba(0,0,0,0.1),0 2px 4px -1px rgba(0,0,0,0.06) */
-
+.textcolor-black{
+    color:#000;
 }
-
-.user-card-logo-container {
-    width: 60px;
-    height: 60px;
+.textcolor-white{
+    color: white;
 }
-
-.href-item{
-    height: 120px;
-    border-radius: 12px;
-    padding: 8px 0px;
-}
-.href-item:hover{
-    background-color: rgb(192, 212, 242);
-}
-.href-item-img{
-    width: 80px;
-    height: 80px;
-    background-color: rgb(202, 208, 255);
-    border-radius: 12px;
+.fix-bottom-bar .design{
+    color:azure;
+    line-height: 50px;
     margin: 0px 10px;
 }
 
-.href-item-img:hover{
-    background-color: rgb(202, 216, 255);
-    border-radius: 12px;
-    margin: 0px 10px;
+/* 加载动画 */
+/* ################################################################## */
+/* 加载动画样式 */
+#loading-container {
+    display: flex;
+    flex-direction: column; /* 将内容放置在垂直方向 */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* 背景色可以根据需要自行修改 */
+    z-index: 9999; /* 确保加载动画在最上层 */
+}
+
+.loader {
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-top: 4px solid #3498db; /* 加载动画的颜色 */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 2s linear infinite;
+}
+
+/* 加载动画下方文字样式 */
+#loading-container p {
+    margin-top: 10px; /* 调整文字与加载动画之间的距离 */
+}
+
+/* 旋转动画 */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 隐藏加载动画当页面加载完成后 */
+body.loaded #loading-container {
+    display: none;
 }
