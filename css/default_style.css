@@ -1,102 +1,221 @@
-.transition{
-    transition: .25s;
-    transition-property: all;
-    transition-duration: 0.25s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
+.transition {
+  transition: 0.25s;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
 }
-.link-card-view{
-    margin: 0 auto;
-    width: 240px;
-    min-width: 240px;
-    max-width: 480px;
-    background-color: aliceblue;
-    padding: 16px;
-    color: black;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
-}
-.link-card-view .caedlink{
-    text-decoration: none;
-}
-.link-card-view .title .toptitle h2{
-    margin: 10px 0px;
-}
-.link-card-view .content{
-    color: rgb(201, 201, 201);
-}
-.link-card-view:hover{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background: rgba(255, 255, 255, 0);
-    backdrop-filter: blur(0px);
-    cursor: pointer;
+.link-card-view {
+  margin: 0 auto;
+  width: 240px;
+  min-width: 240px;
+  max-width: 480px;
+  background-color: aliceblue;
+  padding: 16px;
+  color: black;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
-.none-a-style{
-    text-decoration: none;
+.link-card-view .title .toptitle h2 {
+  margin: 10px 0px;
+  color: #3498db;
+}
+.link-card-view .content {
+  color: rgb(201, 201, 201);
+}
+.link-card-view:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(0px);
+  cursor: pointer;
 }
 
-.fix-bottom-bar{
-    width: 100%;
-    height: 50px;
-    background-color: #000;
-    position: fixed;
-    bottom: 0;
-    display: flex;
+.none-a-style {
+  text-decoration: none;
 }
-.textcolor-black{
-    color:#000;
+
+.fix-bottom-bar {
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  display: flex;
 }
-.textcolor-white{
-    color: white;
+.textcolor-black {
+  color: #000;
 }
-.fix-bottom-bar .design{
-    color:azure;
-    line-height: 50px;
-    margin: 0px 10px;
+.textcolor-white {
+  color: white;
+}
+.fix-bottom-bar .design {
+  color: azure;
+  line-height: 50px;
+  margin: 0px 10px;
 }
 
 /* 加载动画 */
 /* ################################################################## */
 /* 加载动画样式 */
 #loading-container {
-    display: flex;
-    flex-direction: column; /* 将内容放置在垂直方向 */
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column; /* 将内容放置在垂直方向 */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* 背景色可以根据需要自行修改 */
+  z-index: 9999; /* 确保加载动画在最上层 */
+}
+
+.loader {
+  border: 4px solid rgba(0, 0, 0, 0.3);
+  border-top: 4px solid #3498db; /* 加载动画的颜色 */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+/* 加载动画下方文字样式 */
+#loading-container p {
+  margin-top: 10px; /* 调整文字与加载动画之间的距离 */
+}
+
+/* 旋转动画 */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 隐藏加载动画当页面加载完成后 */
+body.loaded #loading-container {
+  display: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  overflow: hidden; /* 确保内容在视窗内显示 */
+}
+
+/* 公共的fade-in类 */
+.fade-in {
+  opacity: 0;
+  display: inline-block;
+  /*color: #3498db;
+    */
+  text-align: center;
+  transform: translateX(100%);
+  animation: fade-in 1s cubic-bezier(0.1, 0.7, 0.3, 1) forwards;
+  transition: transform 1s, opacity 1s;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  -webkit-transition: transform 1s, opacity 1s;
+  -moz-transition: transform 1s, opacity 1s;
+  -ms-transition: transform 1s, opacity 1s;
+  -o-transition: transform 1s, opacity 1s;
+  -webkit-transform: translateX(100%);
+  -webkit-animation: fade-in 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+  }
+  10%{
+    opacity: 0;
+  }
+  35%{
+    opacity: 0.3;
+  }
+  60%{
+    opacity: 0.6;
+  }
+  80%{
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1; /* 在动画结束时，元素保持完全不透明 */
+    transform: translateX(0); /* 在动画结束时，将文字从右侧滑动至屏幕中心 */
+  }
+}
+
+
+
+
+/* ############################# */
+/* 其他页面样式 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 模态对话框样式 */
+
+.modal-dialog {
+    display: none; /* 初始时隐藏对话框 */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff; /* 背景色可以根据需要自行修改 */
-    z-index: 9999; /* 确保加载动画在最上层 */
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明的黑色背景，用于遮罩页面内容 */
+    z-index: 9999; /* 确保对话框在页面上方 */
+
+    /* 初始透明度和过渡动画 */
+    opacity: 0; /* 初始时透明 */
+    transition: opacity 0.3s ease-in-out;
 }
 
-.loader {
-    border: 4px solid rgba(0, 0, 0, 0.3);
-    border-top: 4px solid #3498db; /* 加载动画的颜色 */
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 2s linear infinite;
+.modal-content {
+    position: absolute;
+    min-width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 居中对齐 */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    /* 过渡动画 */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-/* 加载动画下方文字样式 */
-#loading-container p {
-    margin-top: 10px; /* 调整文字与加载动画之间的距离 */
+/* 按钮样式 */
+.open-dialog-btn {
+    margin-top: 20px;
 }
 
-/* 旋转动画 */
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* 隐藏加载动画当页面加载完成后 */
-body.loaded #loading-container {
-    display: none;
+.close-dialog-btn {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

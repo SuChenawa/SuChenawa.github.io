@@ -37,8 +37,9 @@
           href="http://files.suchenawa.com:1000"
         >
           <div class="title">
-            <div class="toptitle"><h2>文件站</h2></div>
-            <div class="subtitle">File Station</div>
+            <div class="toptitle fade-in"><h2>文件站</h2></div>
+            <br />
+            <div class="subtitle fade-in">File Station</div>
           </div>
           <hr />
           <div class="content">点击进入</div>
@@ -48,19 +49,31 @@
     <br />
     <div class="">
       <div class="link-card-view transition">
-        <a
-          class="none-a-style textcolor-black"
-          href="#"
-        >
+        <a class="none-a-style textcolor-black" href="#">
           <div class="title">
-            <div class="toptitle"><h2>Clash订阅</h2></div>
-            <div class="subtitle">Clash Config</div>
+            <div class="toptitle fade-in"><h2>Clash订阅</h2></div>
+            <br />
+            <div class="subtitle fade-in">Clash Config</div>
           </div>
           <hr />
           <div class="content">暂未提供</div>
         </a>
       </div>
     </div>
+
+    <button class="open-dialog-btn" onclick="openDialog()">Testbtn</button>
+
+    <!-- 模态对话框 -->
+    <div class="modal-dialog" style="opacity: 0" id="modalDialog">
+      <!-- 使用id来选择对话框元素 -->
+      <div class="modal-content" id="modalContent">
+        <!-- 使用id来选择对话框内容元素 -->
+        <h2>Title</h2>
+        <p>subtitle</p>
+        <button class="close-dialog-btn" onclick="closeDialog()">关闭</button>
+      </div>
+    </div>
+
     <div style="height: 50px"></div>
     <div class="fix-bottom-bar transition">
       <div class="design">Design by SuChen</div>
@@ -73,11 +86,37 @@
 
     <script type="text/javascript" src="js/mdui.js"></script>
     <script>
-        // 监听页面加载事件
-        window.addEventListener('load', function() {
-            // 页面加载完成后，给body添加loaded类
-            document.body.classList.add('loaded');
-        });
+      // 监听页面加载事件
+      window.addEventListener("load", function () {
+        // 页面加载完成后，给body添加loaded类
+        document.body.classList.add("loaded");
+      });
+    </script>
+    <script>
+      // 获取对话框元素
+      const modalDialog = document.getElementById("modalDialog");
+
+      // 打开对话框
+      function openDialog() {
+        modalDialog.style.display = "block"; // 显示对话框
+        setTimeout(() => {
+          modalDialog.style.opacity = "1"; // 将透明度从0渐变为1
+        }, 10); // 等待10毫秒后设置透明度为1
+      }
+
+      // 关闭对话框
+      function closeDialog() {
+        modalDialog.style.opacity = "0"; // 将透明度从1渐变为0
+        setTimeout(() => {
+          modalDialog.style.display = "none"; // 隐藏对话框
+        }, 300); // 等待0.3秒后隐藏对话框
+      }
+      document.addEventListener("click", function (event) {
+        // 检查点击事件是否发生在遮罩区域
+        if (event.target === modalDialog) {
+          closeDialog();
+        }
+      });
     </script>
   </body>
 </html>
