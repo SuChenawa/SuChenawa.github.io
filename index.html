@@ -1,145 +1,108 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans">
-<!-- 
-    SuChen Web
- -->
+<html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="renderer" content="webkit" />
-  <meta name="force-rendering" content="webkit" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style/default.css">
+    <link rel="stylesheet" href="./src/style/card.css">
+    
 
-  <link type="text/css" rel="stylesheet" href="css/mdui.css" media="screen,projection" />
-  <link href="./css/default_style.css" rel="stylesheet" />
-  <link href="./fonts/fonts.css" rel="stylesheet" />
-
-  <title>SuChen</title>
+    <title>Document</title>
 </head>
-<style>
-*{user-select: none;}
-
-</style>
 
 <body>
-
-  <!-- 加载动画 开始 -->
-  <div id="loading-container">
-    <div class="loader"></div>
-    <h2>wait a seconds</h2>
-  </div>
-  <!-- 加载动画 结束 -->
-
-  <div style="height: 50px"></div>
-
-  <!-- Saob.Work 集成 开始 -->
-
-
-  <div class="">
-    <div class="link-card-view transition">
-      <a id="getsaobWork" onclick="getsaobWork()"></button>
-      <div>
-        
-        <div id="saobWork">
-          <div class="loader"></div>
+    <nav class="nav-bar bg-blue-light-500">
+        <div class="nav-logo">
+            img
         </div>
-        <hr />
-        <div class="content">刷新</div>
-      </div>
-    </a>
-    </div>
-  </div>
-  <br />
-  <!-- Saob.Work 集成 结束 -->
-
-  <div class="">
-    <div class="link-card-view transition">
-      <a class="none-a-style textcolor-black" href="http://files.suchenawa.com:1000">
-        <div class="title">
-          <div class="toptitle fade-in">
-            <h2>文件站</h2>
-          </div>
-          <br />
-          <div class="subtitle fade-in">File Station</div>
+        <div>
+            SuChen's Blog
         </div>
-        <hr />
-        <div class="content">点击进入</div>
-      </a>
-    </div>
-  </div>
-  <br />
-  <div class="">
-    <div class="link-card-view transition">
-      <a class="none-a-style textcolor-black" href="#">
-        <div class="title">
-          <div class="toptitle fade-in">
-            <h2>Clash订阅</h2>
-          </div>
-          <br />
-          <div class="subtitle fade-in">Clash Config</div>
+        <div>
+
         </div>
-        <hr />
-        <div class="content">暂未提供</div>
-      </a>
+    </nav>
+    <div style="height: 100px;">
+
     </div>
-  </div>
+    <div>
+        <div class="flex">
+            <div class="flex-item">
+                <a class="card-link" href="#">
+                    <div class="card-border-0 card-size-1">
+                        <div class="title-card">
+                            <div><img src="" alt="file" width="38px" height="38px"></div>
+                            <div>文件站</div>
+                            <div class="next-web">
+                                <h1>></h1>
+                            </div>
+                        </div>
 
-  <button class="open-dialog-btn" onclick="openDialog()">Testbtn</button>
+                        <hr />
+                        <div class="card-content">
+                            <span>文件存储服务器</span><br>
+                            <br>
 
-  <!-- 模态对话框 -->
-  <div class="modal-dialog" style="opacity: 0" id="modalDialog">
-    <!-- 使用id来选择对话框元素 -->
-    <div class="modal-content" id="modalContent">
-      <!-- 使用id来选择对话框内容元素 -->
-      <h2>Title</h2>
-      <p>subtitle</p>
-      <button class="close-dialog-btn" onclick="closeDialog()">关闭</button>
+
+
+                        </div>
+                        <div class="card-info">
+                            <div class="server-info">
+                                Ping: <span id="ping-result-file">请求中</span><br>
+                                Serverstatus: <span id="status-file">null</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="flex-item">
+                <a class="card-link" href="#">
+                    <div class="card-border-0 card-size-1">
+                        <div class="title-card">
+                            <div>Title</div>
+                            <div class="next-web">
+                                <h1>></h1>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <div>
+
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <a class="card-link" href="#">
+                    <div class="card-border-0 card-size-1">
+                        <div class="title-card">
+                            <div>Saob.Work</div>
+                            <div class="next-web">
+                                <h1>></h1>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <div id="saobWork">
+1
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
     </div>
-  </div>
 
-  <div style="height: 50px"></div>
-  <div class="fix-bottom-bar transition">
-    <div class="design">Design by SuChen</div>
-    <div class="design" style="text-align: right; flex: 1">
-      <a class="none-a-style textcolor-white" href="https://t.me/suchenawa">Contact:Telegram</a>
-    </div>
-  </div>
-  <script type="text/javascript" src="js/saob.work.js"></script>
-  <!-- <script type="text/javascript" src="js/mdui.js"></script> -->
-  <script>
-    // 监听页面加载事件
-    window.addEventListener("load", function () {
-      // 页面加载完成后，给body添加loaded类
-      document.body.classList.add("loaded");
-    });
-  </script>
-  <script>
-    // 获取对话框元素
-    const modalDialog = document.getElementById("modalDialog");
 
-    // 打开对话框
-    function openDialog() {
-      modalDialog.style.display = "block"; // 显示对话框
-      setTimeout(() => {
-        modalDialog.style.opacity = "1"; // 将透明度从0渐变为1
-      }, 10); // 等待10毫秒后设置透明度为1
-    }
-
-    // 关闭对话框
-    function closeDialog() {
-      modalDialog.style.opacity = "0"; // 将透明度从1渐变为0
-      setTimeout(() => {
-        modalDialog.style.display = "none"; // 隐藏对话框
-      }, 300); // 等待0.3秒后隐藏对话框
-    }
-    document.addEventListener("click", function (event) {
-      // 检查点击事件是否发生在遮罩区域
-      if (event.target === modalDialog) {
-        closeDialog();
-      }
-    });
-  </script>
 </body>
+<script src="./src/js/ping.js" type="text/javascript" defer></script>
+<script src="./src/js/saob.work.js" type="text/javascript"></script>
+
 
 </html>

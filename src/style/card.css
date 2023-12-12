@@ -1,0 +1,93 @@
+.card-border-0{
+    border: 0px solid #e9ecef;
+    border-radius: 0px;
+    margin: 6px 0px 0px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    transition-duration:300ms;
+    overflow: hidden;
+    position: relative;
+}
+.card-border-0:hover{
+    margin: 0px 0px 6px 0px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition-duration:300ms;
+}
+.title-card{
+    padding: 20px 20px;
+    overflow: hidden;
+    color: black;
+    font-size: 1.8rem;
+    transition-duration:300ms;
+    display: flex;
+    position: relative;
+}
+.card-link{
+    display: inline-block;
+    text-decoration: none; 
+
+}
+.card-link:hover .next-web {
+    height: 40px; 
+}
+.next-web {
+    position: absolute;
+    right: 40px; /* 根据需要调整位置 */
+    height: 40px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    /* color: transparent; */
+    transition-duration:300ms;
+}
+
+
+.next-web::after {
+    /* content: '>';  */
+    font-size: 24px;
+    transition: opacity 0.3s ease-in-out; /* 过渡效果 */
+
+}
+.next-web h1{
+    padding: 0;
+    margin: 0;
+    line-height: 40px;
+    transition: opacity 0.3s ease-in-out;
+    
+}
+
+.card-link:hover .next-web {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    /* transform: translateX(50%);  */
+}
+
+.card-size-1{
+    /* margin-top: 50px; */
+    min-width: 300px;
+    max-width: 500px;
+    min-height: 200px;
+    max-height: 300px;
+    width: 500px;
+    height: 260px;
+}
+
+.card-content{
+    padding: 0px 30px 0px 30px ;
+
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+
+}
+.card-info{
+    display: inline;
+    position: absolute;
+    bottom: 0px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding: 30px;
+}
