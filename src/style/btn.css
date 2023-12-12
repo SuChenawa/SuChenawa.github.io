@@ -1,0 +1,16 @@
+.saob-work-reload{
+    border: none;
+    background-color: rgba(9, 112, 255,0.4);
+    width: 64px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition-duration:200ms;
+}
+.saob-work-reload:hover{
+    background-color: rgba(9, 112, 255,0.6);
+    transition-duration:200ms;
+}
+.saob-work-reload:active{
+    background-color: rgba(9, 112, 255,0.8);
+    transition-duration:200ms;
+}
